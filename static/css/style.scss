@@ -1,12 +1,21 @@
-$themeColour: rgb(255, 174, 201);
+$themeColour: rgb(255, 202, 211);
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap');
 body {
     background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hair-by-amanda {
+    font-family: 'Alex Brush', cursive;
 }
 
 p,
@@ -38,7 +47,7 @@ li:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient($themeColour, lighten($themeColour, 2%));
+    background: linear-gradient($themeColour, lighten($themeColour, 5%));
     z-index: 5;
 }
 
@@ -50,13 +59,31 @@ li:hover {
     height: 52px;
 }
 
+.page-active {
+    background-color: rgb(255, 255, 255);
+}
+
+.page-active .fas {
+    color: $themeColour;
+}
+
+.page-active img {
+    color: $themeColour;
+}
+
 .menu-lists-container {
     background: linear-gradient($themeColour, lighten($themeColour, 10%));
     position: fixed;
     height: 100vh;
     width: 50vw;
-    bottom: 0;
+    top: 0;
     right: -50vw;
+}
+
+.menu-tel {
+    position: fixed;
+    bottom: 5px;
+    left: 15px;
 }
 
 .menu-button-container {
@@ -104,11 +131,16 @@ li:hover {
 
 .menu-logo-container {
     height: 200px;
-    background-color: lighten($themeColour, 10%);
+    background-color: lighten($themeColour, 9%);
     border-bottom: solid lighten($themeColour, 25%) 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu-topper p {
+    position: relative;
+    bottom: 6px;
 }
 
 .menu-logo {
@@ -151,9 +183,20 @@ li:hover {
 
 .page-container {
     display: block;
-    box-shadow: 5px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
     min-height: 100vh;
     padding-top: 52px;
+}
+
+.alpha-over {
+    overflow: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100vw;
 }
 
 // landing page
@@ -170,6 +213,7 @@ li:hover {
     position: absolute;
     font-size: 80px;
     top: 8vh;
+    right: 15vw;
 }
 
 .landing-page-header p {
@@ -177,7 +221,8 @@ li:hover {
     color: darken($themeColour, 35%);
     opacity: 0.45;
     font-size: 25px;
-    top: 20vh;
+    top: 19vh;
+    right: 16vw;
 }
 
 .main-book-now-button {

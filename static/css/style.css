@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +8,14 @@
 
 body {
   background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hair-by-amanda {
+  font-family: 'Alex Brush', cursive;
 }
 
 p,
@@ -30,7 +39,7 @@ li:hover {
 .fas {
   width: 15px;
   margin-right: 15px;
-  color: #150007;
+  color: #310008;
 }
 
 .fixed-top-menu {
@@ -38,8 +47,8 @@ li:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffaec9), to(#ffb8d0));
-  background: linear-gradient(#ffaec9, #ffb8d0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcad3), to(#ffe4e8));
+  background: linear-gradient(#ffcad3, #ffe4e8);
   z-index: 5;
 }
 
@@ -55,14 +64,32 @@ li:hover {
   height: 52px;
 }
 
+.page-active {
+  background-color: white;
+}
+
+.page-active .fas {
+  color: #ffcad3;
+}
+
+.page-active img {
+  color: #ffcad3;
+}
+
 .menu-lists-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffaec9), to(#ffe1eb));
-  background: linear-gradient(#ffaec9, #ffe1eb);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcad3), to(#fffdfd));
+  background: linear-gradient(#ffcad3, #fffdfd);
   position: fixed;
   height: 100vh;
   width: 50vw;
-  bottom: 0;
+  top: 0;
   right: -50vw;
+}
+
+.menu-tel {
+  position: fixed;
+  bottom: 5px;
+  left: 15px;
 }
 
 .menu-button-container {
@@ -112,7 +139,7 @@ li:hover {
 
 .menu-logo-container {
   height: 200px;
-  background-color: #ffe1eb;
+  background-color: #fff8f9;
   border-bottom: solid white 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,9 +152,14 @@ li:hover {
           align-items: center;
 }
 
+.menu-topper p {
+  position: relative;
+  bottom: 6px;
+}
+
 .menu-logo {
   background: url(../../media/menu-logo.png) no-repeat center;
-  border: solid #ffd2e1 2px;
+  border: solid #ffeef1 2px;
   background-size: auto 100%;
   height: 120px;
   width: 120px;
@@ -170,10 +202,21 @@ li:hover {
 
 .page-container {
   display: block;
-  -webkit-box-shadow: 5px 0px 4px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
   min-height: 100vh;
   padding-top: 52px;
+}
+
+.alpha-over {
+  overflow: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  height: 100%;
+  width: 100vw;
 }
 
 .landing-page-header {
@@ -189,14 +232,16 @@ li:hover {
   position: absolute;
   font-size: 80px;
   top: 8vh;
+  right: 15vw;
 }
 
 .landing-page-header p {
   position: absolute;
-  color: #fb0054;
+  color: #ff183f;
   opacity: 0.45;
   font-size: 25px;
-  top: 20vh;
+  top: 19vh;
+  right: 16vw;
 }
 
 .main-book-now-button {
@@ -207,7 +252,7 @@ li:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
-  border: solid #ffaec9 1px;
+  border: solid #ffcad3 1px;
   position: absolute;
   top: 70vh;
   left: 31vw;
@@ -230,6 +275,6 @@ li:hover {
 }
 
 footer {
-  background-color: #ffaec9;
+  background-color: #ffcad3;
 }
 /*# sourceMappingURL=style.css.map */
