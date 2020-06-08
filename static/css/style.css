@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,8 +21,9 @@ html {
 }
 
 p,
-a {
-  font-family: 'Titillium Web', sans-serif;
+a,
+li {
+  font-family: 'Slabo 27px', serif;
 }
 
 h1,
@@ -44,7 +46,7 @@ li:hover {
 .fas {
   width: 15px;
   margin-right: 15px;
-  color: #310008;
+  color: #3a030d;
 }
 
 .fixed-top-menu {
@@ -52,8 +54,8 @@ li:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffcad3), to(#ffe4e8));
-  background: linear-gradient(#ffcad3, #ffe4e8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdd8df), to(#fef0f3));
+  background: linear-gradient(#fdd8df, #fef0f3);
   z-index: 5;
 }
 
@@ -74,16 +76,16 @@ li:hover {
 }
 
 .page-active .fas {
-  color: #ffcad3;
+  color: #fdd8df;
 }
 
 .page-active img {
-  color: #ffcad3;
+  color: #fdd8df;
 }
 
 .menu-lists-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffcad3), to(#fffdfd));
-  background: linear-gradient(#ffcad3, #fffdfd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdd8df), to(white));
+  background: linear-gradient(#fdd8df, white);
   position: fixed;
   height: 100vh;
   width: 50vw;
@@ -147,7 +149,7 @@ li:hover {
 
 .menu-logo-container {
   height: 200px;
-  background-color: #fff8f9;
+  background-color: #fffafb;
   border-bottom: solid white 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,7 +169,7 @@ li:hover {
 
 .menu-logo {
   background: url(../../media/menu-logo.png) no-repeat center;
-  border: solid #ffeef1 2px;
+  border: solid #fffafb 2px;
   background-size: 100% auto;
   height: 120px;
   width: 120px;
@@ -260,15 +262,15 @@ li:hover {
 }
 
 .main-bookings-button {
-  -webkit-box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
   position: absolute;
   left: 0;
   height: 45px;
   width: 190px;
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
+  -webkit-transform: skew(-18deg);
+          transform: skew(-18deg);
 }
 
 .booking-icon-container {
@@ -287,7 +289,7 @@ li:hover {
       -ms-flex-align: center;
           align-items: center;
   border: solid #ececec 3px;
-  background: radial-gradient(circle at bottom right, #ff97a9 0%, #ffcad3 38%, white 100%);
+  background: radial-gradient(circle at bottom right, #fba7b7 0%, #fdd8df 38%, white 100%);
   border-radius: 50%;
   width: 62px;
   height: 62px;
@@ -301,10 +303,10 @@ li:hover {
 .main-bookings-button-wrapper p {
   position: absolute;
   top: 5px;
-  right: 23px;
+  right: 28px;
 }
 
 footer {
-  background-color: #ffcad3;
+  background-color: #fdd8df;
 }
 /*# sourceMappingURL=style.css.map */
