@@ -1,5 +1,6 @@
 // colours, fonts, sizes
 $themeColour: rgb(253, 216, 223);
+$themeColourAlpha: rgba(253, 216, 223, 0.5);
 * {
     box-sizing: border-box;
     margin: 0;
@@ -86,6 +87,7 @@ li:hover {
     width: 50vw;
     top: 0;
     right: -50vw;
+    overflow-y: auto;
 }
 
 .bottom-menu-container {
@@ -190,8 +192,8 @@ li:hover {
 }
 
 .page-active-desktop {
-    background-color: $themeColour;
-    color: grey;
+    color: rgb(155, 155, 155);
+    text-decoration: underline;
 }
 
 .desktop-menu-container li .fas {
@@ -202,7 +204,6 @@ li:hover {
     display: block;
     box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
     min-height: 100vh;
-    padding-top: 52px;
 }
 
 .alpha-over {
@@ -235,6 +236,10 @@ li:hover {
     font-size: 25px;
     position: relative;
     bottom: 15px;
+}
+
+.main-title {
+    margin-top: 50px;
 }
 
 // booking button
@@ -291,4 +296,21 @@ li:hover {
 footer {
     border-top: solid rgb(170, 170, 170) 1px;
     background-color: lighten($themeColour, 4%);
+}
+
+.footer-table tr {
+    height: 28px;
+}
+
+.footer-table td {
+    width: 110px;
+}
+
+// media quires
+@media only screen and (min-width: 768px) {
+    .fixed-top-menu {
+        margin-top: 8px;
+        background: none;
+        background-color: rgba(0, 0, 0, 0)
+    }
 }

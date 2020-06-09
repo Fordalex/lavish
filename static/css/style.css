@@ -91,6 +91,7 @@ li:hover {
   width: 50vw;
   top: 0;
   right: -50vw;
+  overflow-y: auto;
 }
 
 .bottom-menu-container {
@@ -208,8 +209,8 @@ li:hover {
 }
 
 .page-active-desktop {
-  background-color: #fdd8df;
-  color: grey;
+  color: #9b9b9b;
+  text-decoration: underline;
 }
 
 .desktop-menu-container li .fas {
@@ -221,7 +222,6 @@ li:hover {
   -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
   min-height: 100vh;
-  padding-top: 52px;
 }
 
 .alpha-over {
@@ -253,6 +253,10 @@ li:hover {
   font-size: 25px;
   position: relative;
   bottom: 15px;
+}
+
+.main-title {
+  margin-top: 50px;
 }
 
 .main-bookings-button-container {
@@ -316,5 +320,21 @@ li:hover {
 footer {
   border-top: solid #aaaaaa 1px;
   background-color: #feebef;
+}
+
+.footer-table tr {
+  height: 28px;
+}
+
+.footer-table td {
+  width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fixed-top-menu {
+    margin-top: 8px;
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
