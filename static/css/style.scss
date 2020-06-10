@@ -46,6 +46,10 @@ h6 {
     text-align: end;
 }
 
+.text-theme-colour {
+    color: darken($themeColour, 40%);
+}
+
 li:hover {
     cursor: pointer;
 }
@@ -71,7 +75,7 @@ li:hover {
 }
 
 .fa-star {
-    background: -webkit-gradient(linear, left top, left bottom, from(lighten($themeColour, 5%)), to(darken($themeColour, 2%)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 194)), to(rgb(255, 220, 105)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 18px;
