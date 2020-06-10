@@ -23,7 +23,8 @@ html {
 }
 
 p,
-a,
+a {}
+
 li {
     font-family: 'Slabo 27px', serif;
 }
@@ -60,6 +61,10 @@ li:hover {
     color: #3b5998;
 }
 
+.fa-facebook-square:hover {
+    color: white;
+}
+
 // navigation
 .fixed-top-menu {
     width: 100vw;
@@ -75,7 +80,22 @@ li:hover {
     display: inline-flex;
     align-items: center;
     float: left;
-    height: 52px;
+    width: 53px;
+    height: 53px;
+    background: url(../../svg/logo.svg);
+    background-size: 53px 53px;
+}
+
+.mobile-logo {
+    margin-left: 12px;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../../svg/logo.svg);
+    background-size: 35px 35px;
 }
 
 .page-active {
@@ -225,8 +245,8 @@ li:hover {
     top: 0;
     left: 0;
     z-index: 4;
-    height: 100%;
-    width: 100vw;
+    height: 0%;
+    width: 0vw;
 }
 
 // landing page
@@ -234,7 +254,7 @@ li:hover {
     padding-top: 50px;
     background: transparent;
     background-size: cover;
-    height: 94vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
     background-attachment: fixed;
@@ -253,13 +273,13 @@ li:hover {
 
 .main-title {
     background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 50px;
+    margin-top: 10vh;
 }
 
 // booking button
 .main-bookings-button-container {
     position: absolute;
-    top: 70vh;
+    top: 78vh;
     left: 0;
 }
 
@@ -278,6 +298,20 @@ li:hover {
     height: 45px;
     width: 190px;
     transform: skew(-18deg);
+    transition: 0.5s;
+}
+
+.main-bookings-button-wrapper:hover {
+    cursor: pointer;
+}
+
+.main-bookings-button-wrapper:hover .main-bookings-button {
+    transform: skew(18deg);
+}
+
+.main-bookings-button-wrapper:hover .booking-icon-container {
+    background-color: white;
+    box-shadow: 0px 0px 15px 15px rgba(250, 250, 250, 0.2);
 }
 
 .booking-icon-container {
@@ -302,8 +336,9 @@ li:hover {
 
 .main-bookings-button-wrapper p {
     position: absolute;
-    top: 1px;
+    top: 4px;
     right: 28px;
+    font-family: 'Slabo 27px', serif;
 }
 
 // footer
@@ -333,6 +368,11 @@ footer {
         color: white;
         font-size: 1.2rem;
         font-weight: 200;
+        transition: 0.8s;
+    }
+    .desktop-menu-container li:hover {
+        transform: scale(1.1);
+        color: $themeColour;
     }
 }
 
