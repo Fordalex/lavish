@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" type="image/svg+xml" href="svg/logo.svg">
     <script src="https://kit.fontawesome.com/d4ed0579d0.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <title>Lavish - Home</title>
 </head>
@@ -99,22 +98,24 @@
 
         </header>
         <!-- about section -->
-        <div class="row m-0 p-0">
-            <div class="col-12 col-md-6 col-lg-4 m-0 p-1">
+        <div class="row m-0 p-0 max-width mx-auto">
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5">
                 <h4 class="text-center">About</h4>
                 <p>New hair salon. Pop in, we do colours, pin ups. Curls, from a town center salon called monroes. I worked there for nearly 20 years. Old an new clients welcome</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 m-0 p-0">
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5">
                 <h4 class="text-center">Brands</h4>
-                <p></p>
+                <p>All styling tools and hairdressing equipment.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 m-0 p-0">
-                <h4 class="text-center">About</h4>
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5">
+                <h4 class="text-center">Contact</h4>
+                <p>Please contact me on Facebook on via email, more information can be found below.</p>
+                <a class="main-button btn btn-warning float-right">More</a>
             </div>
         </div>
         <header class="parallax header-parallax" data-parallax="scroll" data-z-index="-2" data-image-src="media/reviews.jpg">
         </header>
-        <div class="row m-0 p-0">
+        <div class="row m-0 p-0 max-width mx-auto">
             <div class="col-12 d-flex justify-content-center">
                 <h2 class="my-4">Reviews</h2>
             </div>
@@ -191,27 +192,48 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 m-0 d-none d-lg-block">
+
+            <div class="col-12  collapse morereviews d">
                 <hr>
             </div>
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5 collapse morereviews">
+                <hr class="d-block d-md-none mt-0">
+                <h5>Jade Walton</h5>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <p class="mt-2 mb-0 text-truncated">Been today for the first time, Amanda was really friendly and done a great job with my hair. Would really recommend 👍🏽</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5 collapse morereviews">
+                <hr class="d-block d-md-none mt-0">
+                <h5>Katie Johnson</h5>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <p class="mt-2 mb-0 text-truncated">Really pleased with my cut today. Lovely friendly salon and great prices. I’ll be back x</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5 collapse morereviews">
+                <hr class="d-block d-md-none">
+                <h5>Melissa Barret</h5>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <p class="mt-2 mb-0 text-truncated">Wouldn’t go anywhere else! Amanda’s been cutting and dying my hair for as long as I can remember... salons lovely and would 100% recommend ❤️</p>
+                <div class="row m-0 p-0 mt-3">
+                    <div class="col-6 p-0">
+                        <p class="m-0 text-small text-secondary">Date: 18/03/2020</p>
+                    </div>
+                    <div class="col-6 p-0 d-flex justify-content-end">
+                        <p class="m-0 text-small text-secondary">More</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 m-0 p-0">
+                <div class="btn btn-warning float-right" data-toggle="collapse" href=".morereviews">More Reviews</div>
+            </div>
         </div>
-
-
 
         <footer class="mt-4">
             <div class="row m-0 p-0 justify-content-center pt-4">
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-
-                    <div>
-
-                        <h5 class="mb-3 text-center">Contact</h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="container-fluid">
 
-                        <h4 class="text-center mb-3">Hours</h4>
+                        <h4 class="text-center my-3">Hours</h4>
                         <table class="footer-table">
                             <tr>
                                 <td><b>Monday</b></td>
@@ -247,7 +269,7 @@
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="container-fluid">
 
-                        <h4 class="text-center mb-3">Contact</h4>
+                        <h4 class="text-center my-3">Contact</h4>
                         <table class="footer-table">
                             <tr>
                                 <td><b>Telephone</b></td>
@@ -264,7 +286,14 @@
                         </table>
                     </div>
                 </div>
-
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <h4 class="my-3 text-center">Bands</h4>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
+                    </div>
+                </div>
                 <div class="col-12 d-flex justify-content-center mt-2">
                     <div>
                         <i class="fab fa-facebook-square"></i>
@@ -280,9 +309,13 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="static/js/parallax.min.js"></script>
     <script src="static/js/menu.js"></script>
     <script src="static/js/javascript.js"></script>
+
 </body>
 
 </html>

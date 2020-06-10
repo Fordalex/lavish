@@ -11,18 +11,14 @@ for (let i = 0; i < loopLength; i++) {
 
 $('.more-button').on('click', function() {
     if ($(this).html() == 'More') {
-
         $(this).html('Close')
     } else {
-
         $(this).html('More')
     }
-
 })
 
 $('#more1').on('click', function() {
     $('.more1-text').html("Amazing lady, would highly recommend her. Great customer service, fantastic skills and value for money. I wouldn't go anywhere else 😍😊 xx")
-
 })
 
 $('#more2').on('click', function() {

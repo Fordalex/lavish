@@ -47,7 +47,7 @@ h6 {
 }
 
 .text-theme-colour {
-    color: darken($themeColour, 40%);
+    color: darken($themeColour, 20%);
 }
 
 li:hover {
@@ -81,6 +81,10 @@ li:hover {
     font-size: 18px;
     margin-right: 2px;
     width: 20px;
+}
+
+.max-width {
+    max-width: 1100px;
 }
 
 // navigation
@@ -263,11 +267,16 @@ li:hover {
     top: 0;
     left: 0;
     z-index: 4;
-    height: 0%;
-    width: 0vw;
+    height: 100%;
+    width: 100vw;
 }
 
 .alpha-svg {
+    position: fixed;
+    top: 0;
+}
+
+.alpha-circle {
     position: fixed;
     top: 0;
 }
@@ -386,7 +395,11 @@ li:hover {
 // footer
 footer {
     border-top: solid rgb(170, 170, 170) 1px;
-    background-color: lighten($themeColour, 4%);
+    background-color: lighten($themeColour, 7%);
+}
+
+footer {
+    font-size: 0.8rem;
 }
 
 .footer-table {
