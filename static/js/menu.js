@@ -2,7 +2,7 @@ $('.menu-button-container').on('click', function() {
     var tl = gsap.timeline();
     if ($(this).hasClass('closed')) {
         gsap.to('.alpha-circle', 0.8, { r: 1200 })
-        gsap.to('.alpha-over', 1.5, { zIndex: 20, opacity: 0.75, })
+        gsap.to('.alpha-over', 1, { zIndex: 20, opacity: 0.75, })
         gsap.to(".menu-lists-container", 0.8, { 'transform': 'translateX(-50vw)', ease: 'power3' })
         gsap.to(".page-container", 0.8, { 'x': '-50vw', ease: 'power3' })
         gsap.to(".fixed-top-menu", 0.8, { 'transform': 'translateX(-50vw)', ease: 'power3' })
