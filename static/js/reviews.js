@@ -106,7 +106,7 @@ function stylingReview(reviewer, id) {
     }
 
     var styledReview = `
-    <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5 mt-3">
+    <div class="col-12 col-md-6 col-lg-4 px-3 py-1 px-md-5 mt-3" data-aos="zoom-in-up">
         <hr class="d-block d-md-none mt-0">
         <h5>${reviewer.name}</h5>
         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
