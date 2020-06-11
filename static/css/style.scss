@@ -289,7 +289,7 @@ li:hover {
 // landing page
 .landing-page-header {
     padding-top: 50px;
-    background: url('../../media/background-2.jpg');
+    background: url('../../media/background-2.png');
     background-size: cover;
     background-position: 30% 30%;
     height: 100vh;
@@ -299,7 +299,7 @@ li:hover {
 }
 
 .reviews-background {
-    background: url('../../media/reviews.jpg');
+    background: url('../../media/reviews.png');
     background-color: rgba(0, 0, 0, 0.5);
     background-position-y: 30%;
     background-size: cover;
@@ -365,6 +365,7 @@ li:hover {
 }
 
 .main-bookings-button-wrapper:hover p {
+    top: 0px;
     transform: scale(1.1);
 }
 
