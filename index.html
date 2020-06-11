@@ -111,12 +111,43 @@
         <!-- reviews section -->
         <header class="reviews-background">
         </header>
-        <div class="row m-0 p-0 max-width mx-auto" id="reviews-container">
+        <div class="row m-0 p-0 max-width mx-auto">
             <div class="col-12">
                 <h2 class="text-center my-4">Reviews</h2>
             </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 m-0 p-0 px-2 d-flex justify-content-end align-items-center">
+                        <div data-toggle="collapse" href=".filter" class="clickable d-flex justify-content-end align-items-center">
+                            <p class="m-0 pr-2">Filter</p>
+                            <i class="fas fa-filter"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <select id="sort-date-review" class="form-control">
+                            <option>Newest First</option>
+                            <option>Oldest First</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <select id="show-amount-review" class="form-control">
+                            <option>3</option>
+                            <option>6</option>
+                            <option>9</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <button class="btn btn-primary container-fluid" id="filter-date">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="row m-0 p-0 max-width mx-auto" id="reviews-container">
+
+        </div>
 
         <!-- footer -->
         <footer class="mt-4">
@@ -179,7 +210,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="container-fluid">
-                        <h4 class="my-3 text-center">Bands</h4>
+                        <h4 class="my-3 text-center">Brands</h4>
                         <p class="m-0 text-center">Brand</p>
                         <p class="m-0 text-center">Brand</p>
                         <p class="m-0 text-center">Brand</p>

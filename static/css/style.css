@@ -49,6 +49,10 @@ li:hover {
   cursor: pointer;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .fas {
   width: 15px;
   margin-right: 15px;
@@ -60,13 +64,13 @@ li:hover {
 }
 
 .fa-facebook-square {
-  color: #3b5998;
+  color: white;
 }
 
 .fa-facebook-square:hover {
-  color: white;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  color: #3b5998;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .fa-star {
@@ -300,7 +304,7 @@ li:hover {
   padding-top: 50px;
   background: url("../../media/background-2.jpg");
   background-size: cover;
-  background-position-y: 30%;
+  background-position: 30% 30%;
   height: 100vh;
   width: 100vw;
   position: relative;
