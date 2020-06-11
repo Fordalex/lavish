@@ -33,23 +33,3 @@ $('#more3').on('click', function() {
 $('#more4').on('click', function() {
     $('.more4-text').html("Been today for the first time, Amanda was really friendly and done a great job with my hair. Would really recommend 👍🏽")
 })
-
-// alpha over
-
-window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 1800) {
-        $('#alpha-svg').css('top', '1800px')
-    } else if (window.pageYOffset > 1500) {
-        $('#alpha-svg').css('top', '1500px')
-    } else if (window.pageYOffset > 1200) {
-        $('#alpha-svg').css('top', '1200px')
-    } else if (window.pageYOffset > 900) {
-        $('#alpha-svg').css('top', '900px')
-    } else if (window.pageYOffset > 600) {
-        $('#alpha-svg').css('top', '600px')
-    } else if (window.pageYOffset > 300) {
-        $('#alpha-svg').css('top', '300px')
-    } else {
-        $('#alpha-svg').css('top', '0px')
-    }
-})

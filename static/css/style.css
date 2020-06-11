@@ -296,19 +296,23 @@ li:hover {
   top: 0;
 }
 
-.parallax {
+.landing-page-header {
   padding-top: 50px;
-  background: transparent;
+  background: url("../../media/background-2.jpg");
   background-size: cover;
+  background-position-y: 30%;
   height: 100vh;
   width: 100vw;
   position: relative;
   background-attachment: fixed;
 }
 
-.header-parallax {
-  background-position-y: 0;
+.reviews-background {
+  background: url("../../media/reviews.jpg");
   height: 10vh;
+  background-position-y: 30%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .landing-page-header h1 {
