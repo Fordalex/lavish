@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <!-- alpha over -->
+    <div class="page-alpha toggle-menu">
+    </div>
 
     <!-- Mobile navigation -->
     <nav class="menu-lists-container">
@@ -38,7 +41,7 @@
     <!-- Desktop navigation -->
     <nav class="fixed-top-menu">
         <div class="mobile-logo d-block d-md-none"></div>
-        <div class="menu-button-container closed d-block d-md-none">
+        <div class="menu-button-container closed d-block d-md-none toggle-menu">
             <div class="rectangle"></div>
             <div class="rectangle"></div>
             <div class="rectangle"></div>
@@ -63,15 +66,7 @@
     </nav>
 
 
-
     <div class="page-container">
-        <!-- Navigation alpha over -->
-        <div class="alpha-over">
-            <svg class="alpha-svg" id="alpha-svg" height="0%" width="0vw">
-                <circle class="alpha-circle" cx="500" cy="10" r="10" fill="black" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-        </div>
         <!-- header -->
         <header class="landing-page-header">
             <div class="container-fluid d-flex justify-content-center main-title p-0">
@@ -110,11 +105,11 @@
         </div>
         <!-- reviews section -->
         <header class="reviews-background">
-        </header>
-        <div class="row m-0 p-0 max-width mx-auto">
-            <div class="col-12">
-                <h2 class="text-center my-4">Reviews</h2>
+            <div class="col-12 py-3 alpha-background">
+                <h1 class="text-center ">Reviews</h1>
             </div>
+        </header>
+        <div class="row m-0 p-0 max-width mx-auto mt-3">
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 m-0 p-0 px-2 d-flex justify-content-end align-items-center">
@@ -146,12 +141,11 @@
         </div>
 
         <div class="row m-0 p-0 max-width mx-auto" id="reviews-container">
-
         </div>
 
         <!-- footer -->
         <footer class="mt-4">
-            <div class="row m-0 p-0 justify-content-center pt-4">
+            <div class="row m-0 p-0 justify-content-center pt-4 max-width mx-auto">
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="container-fluid">
 
@@ -218,16 +212,23 @@
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-2">
                     <div>
-                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-facebook-square text-dark"></i>
                     </div>
                 </div>
-                <div class="col-12 d-flex justify-content-center mb-3 mt-2">
+                <div class="col-12 d-flex justify-content-center mb-2 mt-2">
                     <div>
                         <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary"><span>&#169; 2020 Lavish - Hair By Amanda</span></p>
                     </div>
                 </div>
+                <div class="col-12">
+                    <hr class="mt-1">
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-3 mt-1">
+                    <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary">Developed by: fordsdevelopment</p>
+                </div>
             </div>
         </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

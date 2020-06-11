@@ -99,7 +99,7 @@ function stylingReview(reviewer, id) {
     if (reviewer.comment.length > 100) {
         var truncatedComment = reviewer.comment.substring(0, 99) + "...";
         var fullComment = reviewer.comment
-        var moreButton = `<p class="m-0 text-small text-theme-colour more-button" id="reviews-comment-${id}">More</p>`
+        var moreButton = `<p class="m-0 text-theme-colour more-button" id="reviews-comment-${id}">More</p>`
     } else {
         var truncatedComment = reviewer.comment
         var moreButton = ''
@@ -135,9 +135,12 @@ function compare(a, b) {
 var sortReviews = allReviews.sort(compare)
 
 for (let i = 0; i < 3; i++) {
+    // add the horizontal lines for the 
     if (i % 3 == 0) {
-        console.log('working')
         $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-lg-block"><hr></div>`)
+    }
+    if (i % 2 == 0) {
+        $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-md-block d-lg-none"><hr></div>`)
     }
     $('#reviews-container').append(stylingReview(sortReviews[i], i))
 }
@@ -165,12 +168,11 @@ $('#filter-date').on('click', function() {
     var view = $('#show-amount-review').val()
 
     for (let i = 0; i < view; i++) {
+        // add the horizontal lines for the 
         if (i % 3 == 0) {
-            console.log('working')
             $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-lg-block"><hr></div>`)
         }
         if (i % 2 == 0) {
-            console.log('working')
             $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-md-block d-lg-none"><hr></div>`)
         }
         $('#reviews-container').append(stylingReview(sortReviews[i], i))
