@@ -58,9 +58,27 @@ var kerrysReview = new review(
     "Amanda is fab at what she does. So friendly and chatty making your appointment enjoyable. Im always over the moon with the finished results. 100% recommend. Wouldnt let anyone else do my hair. x",
     new Date('2020-02-25'));
 
+var dawnsReview = new review(
+    'Dawn Marie Williamson',
+    5,
+    "1st time I went and Amanda was amazing. Great cut great colour.",
+    new Date('2020-04-05'));
+
+var daniellesReview = new review(
+    'Danielle Measures',
+    5,
+    "very welcoming and relaxing great atmosphere laughing and chatting",
+    new Date('2020-03-12'));
+
+var natailesReview = new review(
+    'Natalie Hirst',
+    5,
+    "Amanda is the only hairdresser that listens to my needs. Am a 6 monther meaning I always leave 6 months between appointments and she never makes me feel uncomfortable like most! best hairdresser in Yorkshire",
+    new Date('2020-02-25'));
+
 // Add the reviewer to the list of reviewers
 
-var allReviews = [michellesReview, rachelsReview, krissysReview, jadesReview, katiesReview, kerrysReview]
+var allReviews = [michellesReview, rachelsReview, krissysReview, jadesReview, katiesReview, kerrysReview, dawnsReview, daniellesReview, natailesReview]
 
 
 // style the reviews
@@ -117,7 +135,10 @@ function compare(a, b) {
 var sortReviews = allReviews.sort(compare)
 
 for (let i = 0; i < 3; i++) {
-
+    if (i % 3 == 0) {
+        console.log('working')
+        $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-lg-block"><hr></div>`)
+    }
     $('#reviews-container').append(stylingReview(sortReviews[i], i))
 }
 
@@ -144,7 +165,14 @@ $('#filter-date').on('click', function() {
     var view = $('#show-amount-review').val()
 
     for (let i = 0; i < view; i++) {
-
+        if (i % 3 == 0) {
+            console.log('working')
+            $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-lg-block"><hr></div>`)
+        }
+        if (i % 2 == 0) {
+            console.log('working')
+            $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-md-block d-lg-none"><hr></div>`)
+        }
         $('#reviews-container').append(stylingReview(sortReviews[i], i))
     }
 
