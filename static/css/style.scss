@@ -1,5 +1,6 @@
-// imports
-@import "service";
+// variabels 
+$themeColour: rgb(253, 216, 223);
+$themeColourAlpha: rgba(253, 216, 223, 0.5);
 // colours, fonts, sizes
 * {
     box-sizing: border-box;
@@ -521,6 +522,54 @@ li:hover {
     background-color: rgba(250, 250, 250, 0.7);
 }
 
+// services.html ########################
+.secondary-header {
+    margin-top: 60px;
+    background: url('../../media/lavish-banner.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: 100%;
+    height: 200px;
+    border-bottom: solid rgb(231, 231, 231) 1px;
+}
+
+.hair-example-container {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
+    background: linear-gradient(0deg, #e9e9e9 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 1) 95%, #e9e9e9 100%);
+}
+
+.hair-example-wrapper {
+    vertical-align: top;
+    display: inline-block;
+    width: 190px;
+    padding: 15px;
+}
+
+.hair-example-wrapper p,
+h4 {
+    white-space: pre-wrap;
+}
+
+.services-table {
+    width: 100%;
+}
+
+.services-table th {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.services-table td {
+    padding: 5px;
+}
+
+.services-table tr:nth-child(odd) {
+    background-color: rgb(250, 249, 249);
+}
+
+// #############################
 // footer
 footer {
     border-top: solid rgb(170, 170, 170) 1px;
