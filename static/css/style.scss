@@ -1,6 +1,6 @@
+// imports
+@import "service";
 // colours, fonts, sizes
-$themeColour: rgb(253, 216, 223);
-$themeColourAlpha: rgba(253, 216, 223, 0.5);
 * {
     box-sizing: border-box;
     margin: 0;
@@ -137,7 +137,7 @@ li:hover {
 }
 
 .max-width {
-    max-width: 1200px;
+    max-width: 1150px;
 }
 
 .small-icon {
@@ -548,16 +548,6 @@ footer {
 
 .footer-table td:first-of-type {
     width: 30%;
-}
-
-// media quires
-// treatments
-.secondary-header {
-    margin-top: 60px;
-    background: url('../../media/lavish-banner.jpg') no-repeat center;
-    background-size: auto 100%;
-    width: 100%;
-    height: 200px;
 }
 
 // media quiers
