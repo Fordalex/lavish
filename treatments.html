@@ -4,94 +4,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="https://kit.fontawesome.com/d4ed0579d0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="svg/logo.svg">
+    <script src="https://kit.fontawesome.com/d4ed0579d0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-    <title>Lavish - Treatments</title>
+    <title>Lavish - Home</title>
 </head>
 
 <body>
 
+    <!-- loading screen -->
+    <div class="loading-container">
+        <p class="text-light">Loading...</p>
+    </div>
+
+    <!-- alpha over -->
+    <div class="page-alpha toggle-menu">
+    </div>
+
+    <!-- Mobile navigation -->
     <nav class="menu-lists-container">
         <div class="menu-logo-container d-flex d-md-none">
-            <div>
+            <div class="menu-topper">
                 <div class="menu-logo"></div>
-                <h4 class="text-center mt-2">Lavish</h4>
+                <h4 class="text-center mt-2">LAVISH</h4>
+                <p class="m-0 text-secondary hair-by-amanda">Hair By Amanda</p>
             </div>
         </div>
         <ul class="menu-mobile-items d-block d-md-none">
-            <li><i class="fas fa-home"></i>Home</li>
+            <li>
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            </li>
             <li><i class="fas fa-info-circle"></i>About</li>
-            <li class="page-active"><img src="https://img.icons8.com/ios-filled/19/000000/hair-brush.png" class="mr-2" />Treatments</li>
+            <li class="page-active">
+                <a href="treatments.html"><img src="https://img.icons8.com/ios-filled/19/000000/hair-brush.png" class="mr-2" />Treatments</a>
+            </li>
             <li><i class="fas fa-book"></i>Bookings</li>
             <li><i class="fas fa-address-book"></i>Contact</li>
             <li><i class="fas fa-location-arrow"></i>Location</li>
         </ul>
     </nav>
+
+    <!-- Desktop navigation -->
     <nav class="fixed-top-menu">
-        <div class="menu-button-container closed d-block d-md-none">
+        <div class="mobile-logo d-block d-md-none"></div>
+        <div class="menu-button-container closed d-block d-md-none toggle-menu">
             <div class="rectangle"></div>
             <div class="rectangle"></div>
             <div class="rectangle"></div>
             <div class="scissor-1"></div>
             <div class="scissor-2"></div>
         </div>
-        <div class="logo">
-            <p class="m-0">Logo</p>
+        <div class="container-fluid justify-content-between d-none d-md-flex">
+            <div class="logo">
+            </div>
+            <ul class="desktop-menu-container d-none d-md-flex d-inline">
+                <li><a href="index.html">Home</a></li>
+                <li>About</li>
+                <li class="page-active-desktop" style="color: rgb(253, 216, 223);">Treatments</li>
+                <li>Bookings</li>
+                <li>Contact</li>
+                <li>Location</li>
+            </ul>
+            <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                <i class="fab fa-facebook-square float-right mt-3 mr-4 d-inline"></i>
+            </a>
         </div>
-        <ul class="desktop-menu-container d-none d-md-flex">
-            <li><i class="fas fa-home"></i>Home</li>
-            <li><i class="fas fa-info-circle"></i>About</li>
-            <li><img src="https://img.icons8.com/ios-filled/19/000000/hair-brush.png" class="mr-2" />Treatments</li>
-            <li><i class="fas fa-book"></i>Bookings</li>
-            <li><i class="fas fa-address-book"></i>Contact</li>
-            <li><i class="fas fa-location-arrow"></i>Location</li>
-        </ul>
     </nav>
 
 
-
     <div class="page-container">
-        <header class="landing-page-header">
-            <h1>Lavish</h1>
-            <p>Love is in the hair!</p>
-            <div class="main-book-now-button">
-                <img src="https://img.icons8.com/ios-filled/30/000000/barber-chair.png" />
-                <p>Bookings</p>
-            </div>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus ad mollitia dolore expedita soluta nostrum adipisci odio molestiae magnam aperiam itaque, id veritatis consequatur. Sunt ad dolorem quaerat laboriosam vitae laborum, temporibus
-            ipsa, cumque culpa nihil, blanditiis harum labore voluptatibus similique cupiditate repellendus. Excepturi ducimus quod nihil, id architecto debitis.
-        </p>
+        <!-- header -->
+        <header class="secondary-header">
 
-        <footer>
-            <div class="row m-0 p-0 justify-content-center">
-                <div class="col-12 col-md-3 d-flex justify-content-center">
-                    <div>
-                        <h6>Contact</h6>
+
+        </header>
+
+
+
+
+
+        <!-- footer -->
+        <footer class="mt-5">
+            <div class="row m-0 p-0 justify-content-center pt-4 max-width mx-auto">
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+
+                        <h4 class="text-center my-3">Hours</h4>
+                        <table class="footer-table">
+                            <tr>
+                                <td><b>Monday</b></td>
+                                <td class="text-flexend">09:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tuesday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Wednesday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Thursday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Friday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Saturday</b></td>
+                                <td class="text-flexend">09:00 - 15:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Sunday</b></td>
+                                <td class="text-flexend">Closed</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 d-flex justify-content-center">
-                    <div>
-                        <h6>Contact</h6>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+
+                        <h4 class="text-center my-3">Contact</h4>
+                        <table class="footer-table">
+                            <tr>
+                                <td><b>Telephone</b></td>
+                                <td class="text-flexend">01226 934353</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td class="text-flexend">lavish_hair@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Location</b></td>
+                                <td class="text-flexend">49 park street wombwell Barnsley</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 d-flex justify-content-center">
-                    <div>
-                        <h6>Contact</h6>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <h4 class="my-3 text-center">Brands</h4>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
                     </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-2">
+                    <div>
+                        <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                            <i class="fab fa-facebook-square text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-2 mt-2">
+                    <div>
+                        <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary"><span>&#169; 2020
+                                Lavish - Hair By Amanda</span></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="mt-1">
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-3 mt-1">
+                    <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary">Developed by: fordsdevelopment
+                    </p>
                 </div>
             </div>
         </footer>
 
     </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="static/js/parallax.min.js"></script>
     <script src="static/js/menu.js"></script>
+    <script src="static/js/javascript.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

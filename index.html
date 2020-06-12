@@ -16,6 +16,12 @@
 </head>
 
 <body>
+
+    <!-- loading screen -->
+    <div class="loading-container">
+        <p class="text-light">Loading...</p>
+    </div>
+
     <!-- alpha over -->
     <div class="page-alpha toggle-menu">
     </div>
@@ -32,7 +38,9 @@
         <ul class="menu-mobile-items d-block d-md-none">
             <li class="page-active"><i class="fas fa-home"></i>Home</li>
             <li><i class="fas fa-info-circle"></i>About</li>
-            <li><img src="https://img.icons8.com/ios-filled/19/000000/hair-brush.png" class="mr-2" />Treatments</li>
+            <li>
+                <a href="treatments.html"><img src="https://img.icons8.com/ios-filled/19/000000/hair-brush.png" class="mr-2" />Treatments</a>
+            </li>
             <li><i class="fas fa-book"></i>Bookings</li>
             <li><i class="fas fa-address-book"></i>Contact</li>
             <li><i class="fas fa-location-arrow"></i>Location</li>
@@ -55,7 +63,7 @@
             <ul class="desktop-menu-container d-none d-md-flex d-inline">
                 <li class="page-active-desktop" style="color: rgb(253, 216, 223);">Home</li>
                 <li>About</li>
-                <li>Treatments</li>
+                <li><a href="treatments.html">Treatments</a></li>
                 <li>Bookings</li>
                 <li>Contact</li>
                 <li>Location</li>
@@ -147,7 +155,7 @@
                         <p data-aos="fade-left">Some information on this....</p>
                     </div>
                     <div class="col-12 m-0 p-0 mb-5">
-                        <button class="secondary-button container-fluid" data-aos="zoom-in-up">More</button>
+                        <a href="treatments.html"><button class="secondary-button container-fluid" data-aos="zoom-in-up">More</button></a>
                     </div>
                 </div>
             </div>
@@ -166,12 +174,12 @@
         </div>
 
 
-        <div class="row m-0 p-0 my- max-width mx-auto">
+        <div class="row m-0 p-0 my-4 max-width mx-auto">
             <!-- about section -->
             <div class="col-12 col-md-6 m-0 p-0">
                 <div class="row m-0 p-0" data-aos="fade-right">
                     <div class="col-12 m-0 p-0 px-3 py-1 px-md-5">
-                        <hr class="d-block d-md-none">
+
                         <h1 class="text-center">About</h1>
                         <p>New hair salon. Pop in, we do colours, pin ups. Curls, from a town center salon called monroes. I worked there for nearly 20 years. Old an new clients welcome</p>
                     </div>
@@ -183,12 +191,13 @@
             <!-- contact section -->
             <div class="col-12 m-0 p-0 col-md-6">
                 <div class="row m-0 p-0" data-aos="fade-left">
-                    <div class="col-12 m-0 px-3 py-1 px-md-5">
+                    <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
+                        <hr class="d-block d-md-none">
                         <h2 class="text-center">Location</h2>
                         <p>49 park street wombwell Barnsley S73 0HQ</p>
                         <img class="_a3f img" alt="" src="https://external-lht6-1.xx.fbcdn.net/static_map.php?v=1021&amp;osm_provider=2&amp;size=820x242&amp;bbox=53.516182%2C-1.412809%7C53.520183%2C-1.396809&amp;markers=53.51818250%2C-1.40080930&amp;language=en_GB" width="100%">
                     </div>
-                    <div class="col-12 m-0 px-3 py-1 px-md-5">
+                    <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
                         <hr>
                         <h2 class="text-center">Contact</h2>
                         <p>Please contact me on Facebook on via email, more information can be found below.</p>
@@ -333,11 +342,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="static/js/parallax.min.js"></script>
     <script src="static/js/menu.js"></script>
     <script src="static/js/javascript.js"></script>
     <script src="static/js/reviews.js"></script>
-    <script src="static/js/moment.js"></script>
     <script>
         AOS.init();
     </script>
