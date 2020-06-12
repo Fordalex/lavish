@@ -40,6 +40,29 @@ html {
     align-items: center;
 }
 
+// back to top
+.back-to-top {
+    width: 37px;
+    height: 42px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    backdrop-filter: blur(16px);
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white 1px;
+    box-shadow: 3px 6px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top i {
+    position: relative;
+    right: 1px;
+}
+
 .hair-by-amanda {
     font-family: 'Alex Brush', cursive;
 }

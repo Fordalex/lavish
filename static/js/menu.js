@@ -4,7 +4,6 @@ var menuButton = true;
 $('.toggle-menu').on('click', function() {
     if (menuButton) {
         menuButton = false
-        console.log(menuButton)
         var tl = gsap.timeline();
         if ($(this).hasClass('closed')) {
             gsap.to(".page-alpha", 0.01, { zIndex: 4 })
@@ -34,7 +33,6 @@ $('.toggle-menu').on('click', function() {
         $(".menu-button-container").toggleClass('closed')
         setTimeout(function() {
             menuButton = true
-            console.log(menuButton)
         }, 1500)
     }
 })
