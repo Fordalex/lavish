@@ -134,7 +134,7 @@ function compare(a, b) {
 
 var sortReviews = allReviews.sort(compare)
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 6; i++) {
     // add the horizontal lines for the 
     if (i % 3 == 0) {
         $('#reviews-container').append(`<div class="col-12 m-0 p-0 d-none d-lg-block"><hr></div>`)

@@ -45,6 +45,10 @@ h6 {
   color: #f8778f;
 }
 
+.text-weight-light {
+  font-weight: 200;
+}
+
 li:hover {
   cursor: pointer;
 }
@@ -102,8 +106,9 @@ li:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f8f8f8));
-  background: linear-gradient(white, #f8f8f8);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
 }
 
@@ -159,6 +164,7 @@ li:hover {
   top: 0;
   right: -50vw;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .bottom-menu-container {
@@ -284,6 +290,7 @@ li:hover {
 }
 
 .page-container {
+  overflow-x: hidden;
   display: block;
   -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
@@ -303,8 +310,8 @@ li:hover {
 
 .landing-page-header {
   padding-top: 50px;
-  background: url("../../media/background-2.png");
-  background-size: cover;
+  background: url("../../media/background-2.png") no-repeat;
+  background-size: auto 100%;
   background-position: 30% 30%;
   height: 100vh;
   width: 100vw;
@@ -431,13 +438,38 @@ li:hover {
           box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.28);
 }
 
+.book-now-background {
+  background: url("../../media/book-now-background.jpg") no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dark-alpha-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+.create-appointment {
+  font-size: 35px;
+}
+
 .more-button {
   cursor: pointer;
 }
 
-.alpha-background {
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+.light-alpha-background {
   background-color: rgba(250, 250, 250, 0.7);
 }
 
@@ -470,6 +502,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .create-appointment {
+    font-size: 50px;
+  }
   .fixed-top-menu {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -505,8 +540,34 @@ footer {
 }
 
 @media only screen and (min-height: 768px) {
+  .landing-page-header {
+    background-size: 100% auto;
+  }
   .alpha-svg {
     top: 768px;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, right top, left top, from(#e7e7e7), to(white));
+  background: linear-gradient(270deg, #e7e7e7 0%, white 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, right top, left top, from(#fba7b7), to(#fef0f3));
+  background: linear-gradient(270deg, #fba7b7 0%, #fef0f3 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f98fa3;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

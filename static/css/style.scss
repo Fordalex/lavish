@@ -50,6 +50,10 @@ h6 {
     color: darken($themeColour, 20%);
 }
 
+.text-weight-light {
+    font-weight: 200;
+}
+
 li:hover {
     cursor: pointer;
 }
@@ -108,7 +112,8 @@ li:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(white, rgb(248, 248, 248));
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
 }
 
@@ -155,6 +160,7 @@ li:hover {
     top: 0;
     right: -50vw;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .bottom-menu-container {
@@ -270,6 +276,7 @@ li:hover {
 
 // page container and alpha over
 .page-container {
+    overflow-x: hidden;
     display: block;
     box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.35);
     min-height: 100vh;
@@ -289,8 +296,8 @@ li:hover {
 // landing page
 .landing-page-header {
     padding-top: 50px;
-    background: url('../../media/background-2.png');
-    background-size: cover;
+    background: url('../../media/background-2.png') no-repeat;
+    background-size: auto 100%;
     background-position: 30% 30%;
     height: 100vh;
     width: 100vw;
@@ -403,13 +410,34 @@ li:hover {
     box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.28);
 }
 
+// book now callout
+.book-now-background {
+    background: url('../../media/book-now-background.jpg') no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-alpha-background {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.create-appointment {
+    font-size: 35px;
+}
+
 // review section 
 .more-button {
     cursor: pointer;
 }
 
-.alpha-background {
-    backdrop-filter: blur(2px);
+.light-alpha-background {
     background-color: rgba(250, 250, 250, 0.7);
 }
 
@@ -444,6 +472,9 @@ footer {
 
 // media quires
 @media only screen and (min-width: 768px) {
+    .create-appointment {
+        font-size: 50px;
+    }
     .fixed-top-menu {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -476,7 +507,40 @@ footer {
 }
 
 @media only screen and (min-height: 768px) {
+    .landing-page-header {
+        background-size: 100% auto;
+    }
     .alpha-svg {
         top: 768px;
     }
+}
+
+// customer scroll bar 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: linear-gradient(270deg, rgb(231, 231, 231) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, darken($themeColour, 10%) 0%, lighten($themeColour, 5%) 100%);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: darken($themeColour, 15%);
+    cursor: pointer;
 }
