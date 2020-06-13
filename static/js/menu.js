@@ -8,6 +8,7 @@ $('.toggle-menu').on('click', function() {
         if ($(this).hasClass('closed')) {
             gsap.to(".page-alpha", 0.01, { zIndex: 4 })
             gsap.to(".menu-lists-container", 0.8, { 'transform': 'translateX(-50vw)', ease: 'power3' })
+            gsap.to(".back-to-top", 0.8, { 'transform': 'translateX(50vw)', ease: 'power3' })
             gsap.to(".page-container", 0.8, { 'x': '-50vw', ease: 'power3' })
             gsap.to(".fixed-top-menu", 0.8, { 'transform': 'translateX(-50vw)', ease: 'power3' })
             gsap.from(".menu-mobile-items li", 0.5, { stagger: 0.15, 'transform': 'translateX(50vw)' })
@@ -26,6 +27,7 @@ $('.toggle-menu').on('click', function() {
             tl.to(".page-alpha", 0.01, { zIndex: -1 })
             gsap.to(".page-alpha", 0.2, { opacity: 0, 'transform': 'translateX(0vw)' })
             gsap.to(".menu-lists-container", 0.2, { 'transform': 'translateX(0vw)' })
+            gsap.to(".back-to-top", 0.8, { 'transform': 'translateX(0vw)', ease: 'power3' })
             gsap.to(".page-container", 0.2, { 'x': '0' })
             gsap.to(".fixed-top-menu", 0.2, { 'transform': 'translateX(0vw)' })
             gsap.from(".menu-mobile-items li", 0.2, { stagger: 0.08, 'transform': 'translateX(0vw)' })
