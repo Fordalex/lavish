@@ -91,7 +91,7 @@
             </div>`
             <div class="container-fluid d-flex justify-content-center main-bookings-button-container" data-aos="fade-left">
                 <div class="d-flex justify-content-center container-fluid">
-                    <button class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
+                    <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
             <div class="col-12 px-3 py-1 px-md-5 mt-4">
                 <div class="row m-0 p-0">
                     <div class="col-12 m-0 p-0 mb-3">
-                        <h1 class="text-center">Treatments</h1>
+                        <h1 class="text-center">Services</h1>
                     </div>
                     <div class="col-6 col-md-3 m-0 p-3">
                         <img src="media/hair-1.jpg" width="100%" class="small-image" data-aos="fade-right">
@@ -113,21 +113,21 @@
                         <!-- mobile only -->
                         <img src="media/hair-5.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
                         <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Kids cuts</h4>
-                        <p data-aos="fade-left" class="d-block d-md-none">Some information on this....</p>
+                        <p data-aos="fade-left" class="d-block d-md-none">Modern kids haircut styles or a basic trim.</p>
                         <!-- desktop only -->
                         <img src="media/hair-5.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
                         <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Kids cuts</h4>
-                        <p data-aos="fade-up" class=" d-none d-md-block">Some information on this....</p>
+                        <p data-aos="fade-up" class=" d-none d-md-block">Modern kids haircut styles or a basic trim.</p>
                     </div>
                     <div class="col-6 col-md-3 m-0 p-3">
                         <!-- mobile only -->
                         <img src="media/hair-6.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-right">
                         <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-right">Gents cuts</h4>
-                        <p class="d-block d-md-none" data-aos="fade-right">Some information on this....</p>
+                        <p class="d-block d-md-none" data-aos="fade-right">Contemporary styling to classic cuts.</p>
                         <!-- desktop only -->
                         <img src="media/hair-6.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
                         <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Gents cuts</h4>
-                        <p class="d-none d-md-block" data-aos="fade-up">Some information on this....</p>
+                        <p class="d-none d-md-block" data-aos="fade-up">Contemporary styling to classic cuts.</p>
                     </div>
                     <div class="col-6 col-md-3 m-0 p-3">
                         <img src="media/hair-7.jpg" width="100%" class="small-image" data-aos="fade-left">
@@ -172,7 +172,7 @@
                 <div>
                     <h3 class="text-center text-light text-weight-light create-appointment">Make An Appointment</h3>
                     <div class="d-flex justify-content-center container-fluid">
-                        <button class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
+                        <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
                     </div>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                         <div class="container-fluid d-flex justify-content-center">
                             <h2 class="d-flex align-items-center"><i class="fas fa-map-marker-alt mr-2 small-icon"></i>Location</h2>
                         </div>
-                        <p>49 park street wombwell Barnsley S73 0HQ</p>
+                        <p>49 Park Street Wombwell Barnsley S73 0HQ</p>
                         <img class="_a3f img" alt="" src="https://external-lht6-1.xx.fbcdn.net/static_map.php?v=1021&amp;osm_provider=2&amp;size=820x242&amp;bbox=53.516182%2C-1.412809%7C53.520183%2C-1.396809&amp;markers=53.51818250%2C-1.40080930&amp;language=en_GB" width="100%">
                     </div>
                     <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
@@ -211,7 +211,7 @@
                             <h2 class="d-flex align-items-center"><i class="fas fa-mobile-alt mr-2 small-icon mt-1"></i>Contact</h2>
                         </div>
 
-                        <p>Please contact me on Facebook on via email, more information can be found below.</p>
+                        <p>Please contact me on Facebook, mobile or via email, more information can be found below.</p>
                         <a class="main-button btn btn-warning container-fluid secondary-button" data-aos="zoom-in-up">More</a>
                     </div>
                 </div>
@@ -347,6 +347,43 @@
                 </div>
             </div>
         </footer>
+
+        <!-- book now -->
+        <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="book-now-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="footer-table my-3">
+                            <tr>
+                                <td><b>Telephone</b></td>
+                                <td class="text-flexend">01226 934353</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td class="text-flexend">lavish_hair@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Facebook</b></td>
+                                <td class="text-flexend">
+                                    <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                                        <i class="fab fa-facebook-square float-right d-inline text-dark"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
