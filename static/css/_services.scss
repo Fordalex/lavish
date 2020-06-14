@@ -19,7 +19,15 @@
     display: inline-block;
     width: 135px;
     height: 290px;
-    padding: 15px;
+    padding: 5px;
+}
+
+.image-wrapper {
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 .hair-example-wrapper:nth-child(odd) {
