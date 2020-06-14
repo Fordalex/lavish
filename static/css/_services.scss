@@ -18,8 +18,9 @@
     vertical-align: top;
     display: inline-block;
     width: 135px;
-    height: 290px;
+    height: 260px;
     padding: 5px;
+    background-image: linear-gradient(to top, #fafafa, #fbfbfb, #fcfdfc, #fefefe, #ffffff);
 }
 
 .image-wrapper {
@@ -31,7 +32,7 @@
 }
 
 .hair-example-wrapper:nth-child(odd) {
-    background-color: rgb(250, 249, 249);
+    background-image: linear-gradient(to bottom, #fafafa, #fbfbfb, #fcfdfc, #fefefe, #ffffff);
 }
 
 .hair-example-wrapper p,
@@ -55,6 +56,10 @@ h6 {
 
 .services-table td {
     padding: 5px;
+}
+
+.services-table tr:first-of-type {
+    background-image: linear-gradient(to top, #fafafa, #fbfbfb, #fcfdfc, #fefefe, #ffffff);
 }
 
 .services-table tr:nth-child(odd) {
