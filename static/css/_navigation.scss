@@ -1,0 +1,178 @@
+// navigation
+.page-alpha {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+}
+
+.fixed-top-menu {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(16px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.logo {
+    margin-left: 25px;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    width: 53px;
+    height: 53px;
+    background: url(../../svg/logo.svg);
+    background-size: 53px 53px;
+}
+
+.mobile-logo {
+    margin-left: 12px;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../../svg/logo.svg);
+    background-size: 35px 35px;
+}
+
+.page-active {
+    background-color: rgb(255, 255, 255);
+}
+
+.page-active .fas {
+    color: $themeColour;
+}
+
+.page-active img {
+    color: $themeColour;
+}
+
+.menu-lists-container {
+    background: linear-gradient($themeColour, lighten($themeColour, 10%));
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    right: -50vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bottom-menu-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-menu-container p {
+    display: block;
+}
+
+// navigation button
+.menu-button-container {
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin: 12px;
+}
+
+.menu-button-container .rectangle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.scissor-1 {
+    width: 25px;
+    height: 25px;
+    background: url(../../svg/scissors-1.svg);
+    background-size: 25px 25px;
+    z-index: 8;
+    top: 2px;
+    position: absolute;
+    transform: rotateZ(-40deg);
+    left: 4px;
+    opacity: 0;
+}
+
+.scissor-2 {
+    width: 25px;
+    height: 25px;
+    background: url(../../svg/scissors-2.svg);
+    background-size: 25px 25px;
+    z-index: 9;
+    top: 2px;
+    position: absolute;
+    transform: rotateZ(40deg);
+    left: 4px;
+    opacity: 0;
+}
+
+// navigation items
+.menu-logo-container {
+    height: 200px;
+    background-color: lighten($themeColour, 7%);
+    border-bottom: solid lighten($themeColour, 25%) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-topper p {
+    position: relative;
+    bottom: 6px;
+}
+
+.menu-logo {
+    background: url(../../media/menu-logo.png) no-repeat center;
+    border: solid lighten($themeColour, 7%) 2px;
+    background-size: 100% auto;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px 1px rgba(255, 255, 255, 0.5);
+}
+
+.menu-mobile-items {
+    margin: 0;
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-mobile-items li {
+    padding: 17px;
+    border-bottom: solid lighten($themeColour, 25%) 1px;
+}
+
+.desktop-menu-container {
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.desktop-menu-container li {
+    display: inline-block;
+    padding: 14px 22px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.page-active-desktop {
+    text-decoration: underline;
+}
+
+.desktop-menu-container li .fas {
+    margin-right: 9px;
+}

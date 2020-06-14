@@ -1,0 +1,168 @@
+// icons
+.fas {
+    width: 15px;
+    margin-right: 15px;
+    color: black;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
+
+.fa-facebook-square {
+    color: white;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+    transform: scale(1.2);
+}
+
+.fa-star {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 194)), to(rgb(255, 220, 105)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin-right: 2px;
+    width: 20px;
+}
+
+.small-icon {
+    font-size: 22px;
+}
+
+// buttons
+.secondary-button {
+    background: linear-gradient($themeColour, darken($themeColour, 5%));
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+.book-now {
+    border: solid white 3px;
+    background: rgba(255, 228, 212, 0.5);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 6px 10px;
+    font-weight: 700;
+}
+
+.icon-container {
+    box-shadow: 0px 0px 5px 1px rgba(250, 250, 250, 0.5);
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon-container img {
+    position: relative;
+    top: 3px;
+}
+
+// booking button
+.main-bookings-button-container {
+    position: absolute;
+    top: 78vh;
+    left: 0;
+}
+
+.main-bookings-button-wrapper {
+    position: relative;
+    width: 190px;
+    height: 45px;
+}
+
+.main-bookings-button-wrapper p {
+    transition: 1s;
+}
+
+.main-bookings-button {
+    background-color: rgba(248, 248, 248, 0.6);
+    border: solid rgb(236, 236, 236) 3px;
+    position: absolute;
+    left: 0;
+    height: 45px;
+    width: 190px;
+    transform: skew(18deg);
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px 15px rgba(250, 250, 250, 0.2);
+}
+
+.main-bookings-button-wrapper:hover {
+    cursor: pointer;
+}
+
+.main-bookings-button-wrapper:hover .main-bookings-button {
+    transform: skew(-18deg);
+}
+
+.main-bookings-button-wrapper:hover .booking-icon-container {
+    background-color: white;
+    box-shadow: 0px 0px 43px 1px rgba(250, 250, 250, 0.95);
+}
+
+.main-bookings-button-wrapper:hover p {
+    top: 0px;
+    transform: scale(1.1);
+}
+
+.booking-icon-container {
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: -17px;
+    top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(236, 236, 236) 3px;
+    background-color: lighten($themeColour, 5%);
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    transition: 1s;
+}
+
+.booking-icon-container img {
+    position: relative;
+    right: 2px;
+}
+
+.main-bookings-button-wrapper p {
+    position: absolute;
+    top: 4px;
+    right: 28px;
+    font-family: 'Slabo 27px', serif;
+}
+
+// custom scroll bar 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: linear-gradient(270deg, rgb(231, 231, 231) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, darken($themeColour, 10%) 0%, lighten($themeColour, 5%) 100%);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: darken($themeColour, 15%);
+    cursor: pointer;
+}

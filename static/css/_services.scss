@@ -1,0 +1,56 @@
+// services.html ########################
+.secondary-header {
+    margin-top: 60px;
+    background: url('../../media/lavish-banner.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: 100%;
+    height: 200px;
+    border-bottom: solid rgb(231, 231, 231) 1px;
+}
+
+.hair-example-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.hair-example-wrapper {
+    vertical-align: top;
+    display: inline-block;
+    width: 135px;
+    height: 290px;
+    padding: 15px;
+}
+
+.hair-example-wrapper:nth-child(odd) {
+    background-color: rgb(250, 249, 249);
+}
+
+.hair-example-wrapper p,
+h5,
+h6 {
+    white-space: pre-wrap;
+}
+
+.hair-example-wrapper p {
+    color: grey;
+}
+
+.services-table {
+    width: 100%;
+}
+
+.services-table th {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.services-table td {
+    padding: 5px;
+}
+
+.services-table tr:nth-child(odd) {
+    background-color: rgb(250, 249, 249);
+}
+
+// #############################
