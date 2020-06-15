@@ -12,12 +12,11 @@ $('body').on('click', '.more-button', function() {
 
 // opp object
 
-function review(name, rating, comment, date, more) {
+function review(name, rating, comment, date) {
     this.name = name
     this.rating = rating
     this.comment = comment
     this.date = date
-    this.more = more
 }
 
 // Create the review and their review

@@ -10,8 +10,9 @@
 
 .hair-example-container {
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
+    font-size: 0;
 }
 
 .hair-example-wrapper {
@@ -19,8 +20,18 @@
     display: inline-block;
     width: 135px;
     height: 260px;
+    margin: 0;
     padding: 5px;
     background-image: linear-gradient(to top, #fafafa, #fbfbfb, #fcfdfc, #fefefe, #ffffff);
+    border-left: dotted rgb(240, 240, 240) 4px;
+}
+
+.hair-example-wrapper h4 {
+    font-size: 1.25rem;
+}
+
+.hair-example-wrapper p {
+    font-size: 1rem;
 }
 
 .image-wrapper {
@@ -47,6 +58,7 @@ h6 {
 
 .services-table {
     width: 100%;
+    border-bottom: solid rgb(241, 241, 241) 1px;
 }
 
 .services-table th {

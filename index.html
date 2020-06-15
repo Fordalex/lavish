@@ -43,8 +43,8 @@
         <ul class="menu-mobile-items d-block d-md-none">
             <li class="page-active"><i class="fas fa-home"></i>Home</li>
             <li><i class="fas fa-info-circle"></i>About</li>
-            <li>
-                <a href="services.html"><img src="https://img.icons8.com/ios-filled/19/000000/barber-scissors.png" class="mr-2" />Services</a>
+            <li for="services-button">
+                <a id="services-button" href="services.html"><img src="https://img.icons8.com/ios-filled/19/000000/barber-scissors.png" class="mr-2" />Services</a>
             </li>
             <li><i class="fas fa-book"></i>Bookings</li>
             <li><i class="fas fa-address-book"></i>Contact</li>
@@ -91,7 +91,10 @@
             </div>`
             <div class="container-fluid d-flex justify-content-center main-bookings-button-container" data-aos="fade-left">
                 <div class="d-flex justify-content-center container-fluid">
-                    <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
+                    <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
+                        <div class="icon-container mr-2"><img
+                                src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now
+                    </button>
                 </div>
             </div>
 
@@ -99,73 +102,92 @@
         <!-- main section -->
         <div class="row m-0 p-0 my-2 max-width mx-auto">
             <!-- treatments section -->
-            <div class="col-12 px-3 py-1 px-md-5 mt-4">
+            <div class="col-12 px-1 px-md-3 py-1 px-md-5 mt-4">
                 <div class="row m-0 p-0">
                     <div class="col-12 m-0 p-0 mb-3">
                         <h1 class="text-center">Services</h1>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-2">
-                        <div class="image-wrapper image-shadow" data-aos="fade-right">
-                            <img src="media/hair-1.jpg" width="100%" class="small-image">
-                            <h4 class="text-center mt-1">Pin ups</h4>
-                        </div>
-                        <div class="px-2 mt-2">
-                            <p data-aos="fade-right">Some information on this....</p>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <img src="media/hair-1.jpg" width="100%" class="small-image" data-aos="fade-right">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-right">Pin ups</h4>
+                            <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
                         </div>
 
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
                         <!-- mobile only -->
                         <img src="media/hair-5.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
-                        <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Kids cuts</h4>
-                        <p data-aos="fade-left" class="d-block d-md-none">Modern kids haircut styles or a basic trim.</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Kids cuts</h4>
+                            <p data-aos="fade-left" class="d-block d-md-none text-secondary">Modern kids haircut styles or a basic trim.</p>
+                        </div>
                         <!-- desktop only -->
                         <img src="media/hair-5.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
                         <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Kids cuts</h4>
-                        <p data-aos="fade-up" class=" d-none d-md-block">Modern kids haircut styles or a basic trim.</p>
+                        <p data-aos="fade-up" class=" d-none d-md-block text-secondary">Modern kids haircut styles or a basic trim.</p>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
                         <!-- mobile only -->
                         <img src="media/hair-6.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-right">
-                        <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-right">Gents cuts</h4>
-                        <p class="d-block d-md-none" data-aos="fade-right">Contemporary styling to classic cuts.</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-right">Gents cuts</h4>
+                            <p class="d-block d-md-none text-secondary" data-aos="fade-right">Contemporary styling to classic cuts.</p>
+                        </div>
                         <!-- desktop only -->
                         <img src="media/hair-6.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
-                        <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Gents cuts</h4>
-                        <p class="d-none d-md-block" data-aos="fade-up">Contemporary styling to classic cuts.</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Gents cuts</h4>
+                            <p class="d-none d-md-block text-secondary" data-aos="fade-up">Contemporary styling to classic cuts.</p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
                         <img src="media/hair-7.jpg" width="100%" class="small-image" data-aos="fade-left">
-                        <h4 class="text-center mt-3" data-aos="fade-left">Full head foils</h4>
-                        <p data-aos="fade-left">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-left">Full head foils</h4>
+                            <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
                         <img src="media/hair-12.jpg" width="100%" class="small-image " data-aos="fade-right">
-                        <h4 class="text-center mt-3" data-aos="fade-right">Ombre/root retouch</h4>
-                        <p data-aos="fade-right">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-right">Ombre/root retouch</h4>
+                            <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
                         <!-- mobile only -->
                         <img src="media/hair-9.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
-                        <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Blow dry</h4>
-                        <p class="d-block d-md-none" data-aos="fade-left">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Blow dry</h4>
+                            <p class="d-block d-md-none text-secondary" data-aos="fade-left">Some information on this....
+                            </p>
+                        </div>
                         <!-- desktop only -->
                         <img src="media/hair-9.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
-                        <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Blow dry</h4>
-                        <p class="d-none d-md-block" data-aos="fade-up">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Blow dry</h4>
+                            <p class="d-none d-md-block text-secondary" data-aos="fade-up">Some information on this....
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3 d-none d-md-block">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
                         <img src="media/hair-11.jpg" width="100%" class="small-image" data-aos="fade-up">
-                        <h4 class="text-center mt-3" data-aos="fade-up">Dry Cut</h4>
-                        <p data-aos="fade-up">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-up">Dry Cut</h4>
+                            <p class="text-secondary" data-aos="fade-up">Some information on this....</p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3 m-0 p-3 d-none d-md-block">
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
                         <img src="media/hair-13.jpg" width="100%" class="small-image" data-aos="fade-left">
-                        <h4 class="text-center mt-3" data-aos="fade-left">Balayage/colour</h4>
-                        <p data-aos="fade-left">Some information on this....</p>
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-left">Balayage/colour</h4>
+                            <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
+                        </div>
                     </div>
                     <div class="col-12 m-0 p-0 mb-5">
-                        <a href="services.html"><button class="secondary-button container-fluid" data-aos="zoom-in-up">More</button></a>
+                        <a href="services.html"><button class="secondary-button container-fluid"
+                                data-aos="zoom-in-up">More</button></a>
                     </div>
                 </div>
             </div>
@@ -177,7 +199,10 @@
                 <div>
                     <h3 class="text-center text-light text-weight-light create-appointment">Make An Appointment</h3>
                     <div class="d-flex justify-content-center container-fluid">
-                        <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center"><div class="icon-container mr-2"><img src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now</button>
+                        <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
+                            <div class="icon-container mr-2"><img
+                                    src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now
+                        </button>
                     </div>
                 </div>
             </div>
@@ -230,11 +255,11 @@
                 <h2 class="text-center ">Reviews</h2>
             </div>
         </header>
-        <div class="row m-0 p-0 max-width mx-auto mt-3">
+        <div class="row m-0 p-0 max-width mx-auto mt-1">
             <div class="col-12 m-0 p-0">
                 <div class="row m-0 p-0">
                     <div class="col-12 m-0 p-0 px-2 d-flex justify-content-end align-items-center" data-aos="fade-left">
-                        <div data-toggle="collapse" href=".filter" class="clickable d-flex justify-content-end align-items-center">
+                        <div data-toggle="collapse" href=".filter" class="clickable d-flex justify-content-end align-items-center p-3">
                             <p class="m-0 pr-2">Filter</p>
                             <i class="fas fa-filter"></i>
                         </div>
@@ -361,8 +386,8 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <table class="footer-table my-3">

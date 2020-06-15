@@ -156,6 +156,11 @@
     border-bottom: solid lighten($themeColour, 25%) 1px;
 }
 
+.menu-mobile-items li a {
+    display: inline-block;
+    width: 100%;
+}
+
 .desktop-menu-container {
     margin: 0;
     display: inline-flex;
