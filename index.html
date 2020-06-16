@@ -1,1003 +1,449 @@
-< !DOCTYPE ht ml>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="static/css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/svg+xml" href="svg/logo.svg">
-        <script src="https://kit.fontawesome.com/d4ed0579d0.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-        <title>Lavish - Home</title>
-    </head>
-
-    <body>
-
-        <!-- loading screen -->
-        <div class="loading-container">
-            <p class="text-light">Loading...</p>
-        </div>
-
-        <!-- alpha over -->
-        <div class="page-alpha toggle-menu">
-        </div>
-
-        <!-- back to top -->
-        <a class="back-to-top d-none" href="#page-top">
-            <i class="fas fa-arrow-up text-light m-0" style="font-size: 20px;"></i>
-        </a>
-
-        <!-- Mobile navigation -->
-        <nav class="menu-lists-container">
-            <div class="menu-logo-container d-flex d-md-none">
-                <div class="menu-topper">
-                    <div class="menu-logo"></div>
-                    <h4 class="text-center mt-2">LAVISH</h4>
-                    <p class="m-0 text-secondary hair-by-amanda">Hair By Amanda</p>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="svg/logo.svg">
+    <script src="https://kit.fontawesome.com/d4ed0579d0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <title>Lavish - Home</title>
+</head>
+
+<body>
+
+    <!-- loading screen -->
+    <div class="loading-container">
+        <p class="text-light">Loading...</p>
+    </div>
+
+    <!-- alpha over -->
+    <div class="page-alpha toggle-menu">
+    </div>
+
+    <!-- back to top -->
+    <a class="back-to-top d-none" href="#page-top">
+        <i class="fas fa-arrow-up text-light m-0" style="font-size: 20px;"></i>
+    </a>
+
+    <!-- Mobile navigation -->
+    <nav class="menu-lists-container">
+        <div class="menu-logo-container d-flex d-md-none">
+            <div class="menu-topper">
+                <div class="menu-logo"></div>
+                <h4 class="text-center mt-2">LAVISH</h4>
+                <p class="m-0 text-secondary hair-by-amanda">Hair By Amanda</p>
             </div>
-            <ul class="menu-mobile-items d-block d-md-none">
-                <li class="page-active"><i class="fas fa-home"></i>Home</li>
-                <li><i class="fas fa-info-circle"></i>About</li>
-                <li for="services-button">
-                    <a id="services-button" href="services.html"><img src="https://img.icons8.com/ios-filled/19/000000/barber-scissors.png" class="mr-2" />Services</a>
-                </li>
-                <li><i class="fas fa-book"></i>Bookings</li>
-                <li><i class="fas fa-address-book"></i>Contact</li>
-                <li><i class="fas fa-map-marker-alt "></i>Location</li>
+        </div>
+        <ul class="menu-mobile-items d-block d-md-none">
+            <li class="page-active"><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-info-circle"></i>About</li>
+            <li for="services-button">
+                <a id="services-button" href="services.html"><img src="https://img.icons8.com/ios-filled/19/000000/barber-scissors.png" class="mr-2" />Services</a>
+            </li>
+            <li><i class="fas fa-book"></i>Bookings</li>
+            <li><i class="fas fa-address-book"></i>Contact</li>
+            <li><i class="fas fa-map-marker-alt "></i>Location</li>
+        </ul>
+    </nav>
+
+    <!-- Desktop navigation -->
+    <nav class="fixed-top-menu">
+        <div class="mobile-logo d-block d-md-none"></div>
+        <div class="menu-button-container closed d-block d-md-none toggle-menu">
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="scissor-1"></div>
+            <div class="scissor-2"></div>
+        </div>
+        <div class="container-fluid justify-content-between d-none d-md-flex">
+            <div class="logo">
+            </div>
+            <ul class="desktop-menu-container d-none d-md-flex d-inline">
+                <li class="page-active-desktop" style="color: rgb(253, 216, 223);">Home</li>
+                <li>About</li>
+                <li><a href="services.html">Services</a></li>
+                <li>Bookings</li>
+                <li>Contact</li>
+                <li>Location</li>
             </ul>
-        </nav>
+            <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                <i class="fab fa-facebook-square float-right mt-3 mr-4 d-inline"></i>
+            </a>
+        </div>
+    </nav>
 
-        <!-- Desktop navigation -->
-        <nav class="fixed-top-menu">
-            <div class="mobile-logo d-block d-md-none"></div>
-            <div class="menu-button-container closed d-block d-md-none toggle-menu">
-                <div class="rectangle"></div>
-                <div class="rectangle"></div>
-                <div class="rectangle"></div>
-                <div class="scissor-1"></div>
-                <div class="scissor-2"></div>
-            </div>
-            <div class="container-fluid justify-content-between d-none d-md-flex">
-                <div class="logo">
+
+    <div class="page-container" id="page-top">
+        <!-- header -->
+        <header class="landing-page-header">
+            <div class="container-fluid d-flex justify-content-center main-title p-0">
+                <div data-aos="fade-right">
+                    <h1>LAVISH</h1>
+                    <p class="hair-by-amanda text-dark float-right">Hair By Amanda</p>
                 </div>
-                <ul class="desktop-menu-container d-none d-md-flex d-inline">
-                    <li class="page-active-desktop" style="color: rgb(253, 216, 223);">Home</li>
-                    <li>About</li>
-                    <li><a href="services.html">Services</a></li>
-                    <li>Bookings</li>
-                    <li>Contact</li>
-                    <li>Location</li>
-                </ul>
-                <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
-                    <i class="fab fa-facebook-square float-right mt-3 mr-4 d-inline"></i>
-                </a>
-            </div>
-        </nav>
-
-
-        <div class="page-container" id="page-top">
-            <!-- header -->
-            <header class="landing-page-header">
-                <div class="container-fluid d-flex justify-content-center main-title p-0">
-                    <div data-aos="fade-right">
-                        <h1>LAVISH</h1>
-                        <p class="hair-by-amanda text-dark float-right">Hair By Amanda</p>
-                    </div>
-                </div>`
-                <div class="container-fluid d-flex justify-content-center main-bookings-button-container" data-aos="fade-left">
-                    <div class="d-flex justify-content-center container-fluid">
-                        <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
+            </div>`
+            <div class="container-fluid d-flex justify-content-center main-bookings-button-container" data-aos="fade-left">
+                <div class="d-flex justify-content-center container-fluid">
+                    <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
                         <div class="icon-container mr-2"><img
                                 src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now
                     </button>
-                    </div>
-                </div>
-
-            </header>
-            <!-- main section -->
-            <div class="row m-0 p-0 my-2 max-width mx-auto">
-                <!-- treatments section -->
-                <div class="col-12 px-1 px-md-3 py-1 px-md-5 mt-4">
-                    <div class="row m-0 p-0">
-                        <div class="col-12 m-0 p-0 mb-3">
-                            <h1 class="text-center">Services</h1>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <img src="media/hair-1.jpg" width="100%" class="small-image" data-aos="fade-right">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3" data-aos="fade-right">Pin ups</h4>
-                                <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <!-- mobile only -->
-                            <img src="media/hair-5.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Kids cuts</h4>
-                                <p data-aos="fade-left" class="d-block d-md-none text-secondary">Modern kids haircut styles or a basic trim.</p>
-                            </div>
-                            <!-- desktop only -->
-                            <img src="media/hair-5.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
-                            <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Kids cuts</h4>
-                            <p data-aos="fade-up" class=" d-none d-md-block text-secondary">Modern kids haircut styles or a basic trim.</p>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <!-- mobile only -->
-                            <img src="media/hair-6.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-right">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-right">Gents cuts</h4>
-                                <p class="d-block d-md-none text-secondary" data-aos="fade-right">Contemporary styling to classic cuts.</p>
-                            </div>
-                            <!-- desktop only -->
-                            <img src="media/hair-6.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Gents cuts</h4>
-                                <p class="d-none d-md-block text-secondary" data-aos="fade-up">Contemporary styling to classic cuts.</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <img src="media/hair-7.jpg" width="100%" class="small-image" data-aos="fade-left">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3" data-aos="fade-left">Full head foils</h4>
-                                <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <img src="media/hair-12.jpg" width="100%" class="small-image " data-aos="fade-right">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3" data-aos="fade-right">Ombre/root retouch</h4>
-                                <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3">
-                            <!-- mobile only -->
-                            <img src="media/hair-9.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Blow dry</h4>
-                                <p class="d-block d-md-none text-secondary" data-aos="fade-left">Some information on this....
-                                </p>
-                            </div>
-                            <!-- desktop only -->
-                            <img src="media/hair-9.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Blow dry</h4>
-                                <p class="d-none d-md-block text-secondary" data-aos="fade-up">Some information on this....
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
-                            <img src="media/hair-11.jpg" width="100%" class="small-image" data-aos="fade-up">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3" data-aos="fade-up">Dry Cut</h4>
-                                <p class="text-secondary" data-aos="fade-up">Some information on this....</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
-                            <img src="media/hair-13.jpg" width="100%" class="small-image" data-aos="fade-left">
-                            <div class="px-2">
-                                <h4 class="text-center mt-3" data-aos="fade-left">Balayage/colour</h4>
-                                <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
-                            </div>
-                        </div>
-                        <div class="col-12 m-0 p-0 mb-5">
-                            <a href="services.html"><button class="secondary-button container-fluid"
-                                data-aos="zoom-in-up">More</button></a>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            <!-- book now callout -->
-            <div class="book-now-background ">
-                <div class="dark-alpha-background container-fluid d-flex justify-content-center align-items-center">
-                    <div>
-                        <h3 class="text-center text-light text-weight-light create-appointment">Make An Appointment</h3>
-                        <div class="d-flex justify-content-center container-fluid">
-                            <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
+        </header>
+        <!-- main section -->
+        <div class="row m-0 p-0 my-2 max-width mx-auto">
+            <!-- treatments section -->
+            <div class="col-12 px-1 px-md-3 py-1 px-md-5 mt-4">
+                <div class="row m-0 p-0">
+                    <div class="col-12 m-0 p-0 mb-3">
+                        <h1 class="text-center">Services</h1>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <img src="media/hair-1.jpg" width="100%" class="small-image" data-aos="fade-right">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-right">Pin ups</h4>
+                            <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <!-- mobile only -->
+                        <img src="media/hair-5.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Kids cuts</h4>
+                            <p data-aos="fade-left" class="d-block d-md-none text-secondary">Modern kids haircut styles or a basic trim.</p>
+                        </div>
+                        <!-- desktop only -->
+                        <img src="media/hair-5.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
+                        <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Kids cuts</h4>
+                        <p data-aos="fade-up" class=" d-none d-md-block text-secondary">Modern kids haircut styles or a basic trim.</p>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <!-- mobile only -->
+                        <img src="media/hair-6.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-right">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-right">Gents cuts</h4>
+                            <p class="d-block d-md-none text-secondary" data-aos="fade-right">Contemporary styling to classic cuts.</p>
+                        </div>
+                        <!-- desktop only -->
+                        <img src="media/hair-6.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Gents cuts</h4>
+                            <p class="d-none d-md-block text-secondary" data-aos="fade-up">Contemporary styling to classic cuts.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <img src="media/hair-7.jpg" width="100%" class="small-image" data-aos="fade-left">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-left">Full head foils</h4>
+                            <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <img src="media/hair-12.jpg" width="100%" class="small-image " data-aos="fade-right">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-right">Ombre/root retouch</h4>
+                            <p class="text-secondary" data-aos="fade-right">Some information on this....</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3">
+                        <!-- mobile only -->
+                        <img src="media/hair-9.jpg" width="100%" class="small-image d-block d-md-none" data-aos="fade-left">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-block d-md-none" data-aos="fade-left">Blow dry</h4>
+                            <p class="d-block d-md-none text-secondary" data-aos="fade-left">Some information on this....
+                            </p>
+                        </div>
+                        <!-- desktop only -->
+                        <img src="media/hair-9.jpg" width="100%" class="small-image d-none d-md-block" data-aos="fade-up">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3 d-none d-md-block" data-aos="fade-up">Blow dry</h4>
+                            <p class="d-none d-md-block text-secondary" data-aos="fade-up">Some information on this....
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
+                        <img src="media/hair-11.jpg" width="100%" class="small-image" data-aos="fade-up">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-up">Dry Cut</h4>
+                            <p class="text-secondary" data-aos="fade-up">Some information on this....</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 m-0 p-1 p-md-3 d-none d-md-block">
+                        <img src="media/hair-13.jpg" width="100%" class="small-image" data-aos="fade-left">
+                        <div class="px-2">
+                            <h4 class="text-center mt-3" data-aos="fade-left">Balayage/colour</h4>
+                            <p class="text-secondary" data-aos="fade-left">Some information on this....</p>
+                        </div>
+                    </div>
+                    <div class="col-12 m-0 p-0 mb-5">
+                        <a href="services.html"><button class="secondary-button container-fluid"
+                                data-aos="zoom-in-up">More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- book now callout -->
+        <div class="book-now-background ">
+            <div class="dark-alpha-background container-fluid d-flex justify-content-center align-items-center">
+                <div>
+                    <h3 class="text-center text-light text-weight-light create-appointment">Make An Appointment</h3>
+                    <div class="d-flex justify-content-center container-fluid">
+                        <button data-toggle="modal" data-target="#book-now-modal" class="book-now mt-4 mt-md-5 d-flex justify-content-center align-items-center">
                             <div class="icon-container mr-2"><img
                                     src="https://img.icons8.com/ios-filled/20/000000/barber-chair.png" /></div>Book Now
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row m-0 p-0 my-4 max-width mx-auto">
+            <!-- about section -->
+            <div class="col-12 col-md-6 m-0 p-0">
+                <div class="row m-0 p-0" data-aos="fade-right">
+                    <div class="col-12 m-0 p-0 px-3 py-1 px-md-5">
+                        <div class="container-fluid d-flex justify-content-center">
+                            <h1 class="d-flex align-items-center mb-3">About</h1>
                         </div>
+                        <p>New hair salon. Pop in, we do colours, pin ups. Curls, from a town center salon called monroes. I worked there for nearly 20 years. Old an new clients welcome</p>
+                    </div>
+                    <div class="col-12 px-3 py-1 px-md-5">
+                        <img src="media/lavish-salon.png" width="100%" style="border-radius:2%;">
+                    </div>
+                </div>
+            </div>
+            <!-- contact section -->
+            <div class="col-12 m-0 p-0 col-md-6">
+                <div class="row m-0 p-0" data-aos="fade-left">
+                    <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
+                        <hr class="d-block d-md-none">
+                        <div class="container-fluid d-flex justify-content-center">
+                            <h2 class="d-flex align-items-center"><i class="fas fa-map-marker-alt mr-2 small-icon"></i>Location</h2>
+                        </div>
+                        <p>49 Park Street Wombwell Barnsley S73 0HQ</p>
+                        <img class="_a3f img" alt="" src="https://external-lht6-1.xx.fbcdn.net/static_map.php?v=1021&amp;osm_provider=2&amp;size=820x242&amp;bbox=53.516182%2C-1.412809%7C53.520183%2C-1.396809&amp;markers=53.51818250%2C-1.40080930&amp;language=en_GB" width="100%"
+                            style="border-radius:2%;">
+                    </div>
+                    <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
+                        <hr>
+                        <div class="container-fluid d-flex justify-content-center">
+                            <h2 class="d-flex align-items-center"><i class="fas fa-mobile-alt mr-2 small-icon mt-1"></i>Contact</h2>
+                        </div>
+
+                        <p>Please contact me on Facebook, mobile or via email, more information can be found below.</p>
+                        <a class="main-button btn btn-warning container-fluid secondary-button" data-aos="zoom-in-up">More</a>
                     </div>
                 </div>
             </div>
 
-
-            <div class="row m-0 p-0 my-4 max-width mx-auto">
-                <!-- about section -->
-                <div class="col-12 col-md-6 m-0 p-0">
-                    <div class="row m-0 p-0" data-aos="fade-right">
-                        <div class="col-12 m-0 p-0 px-3 py-1 px-md-5">
-                            <div class="container-fluid d-flex justify-content-center">
-                                <h1 class="d-flex align-items-center mb-3">About</h1>
-                            </div>
-                            <p>New hair salon. Pop in, we do colours, pin ups. Curls, from a town center salon called monroes. I worked there for nearly 20 years. Old an new clients welcome</p>
-                        </div>
-                        <div class="col-12 px-3 py-1 px-md-5">
-                            <img src="media/lavish-salon.png" width="100%" style="border-radius:2%;">
-                        </div>
-                    </div>
-                </div>
-                <!-- contact section -->
-                <div class="col-12 m-0 p-0 col-md-6">
-                    <div class="row m-0 p-0" data-aos="fade-left">
-                        <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
-                            <hr class="d-block d-md-none">
-                            <div class="container-fluid d-flex justify-content-center">
-                                <h2 class="d-flex align-items-center"><i class="fas fa-map-marker-alt mr-2 small-icon"></i>Location</h2>
-                            </div>
-                            <p>49 Park Street Wombwell Barnsley S73 0HQ</p>
-                            <img class="_a3f img" alt="" src="https://external-lht6-1.xx.fbcdn.net/static_map.php?v=1021&amp;osm_provider=2&amp;size=820x242&amp;bbox=53.516182%2C-1.412809%7C53.520183%2C-1.396809&amp;markers=53.51818250%2C-1.40080930&amp;language=en_GB" width="100%"
-                                style="border-radius:2%;">
-                        </div>
-                        <div class="col-12 m-0 px-3 py-1 my-2 px-md-5">
-                            <hr>
-                            <div class="container-fluid d-flex justify-content-center">
-                                <h2 class="d-flex align-items-center"><i class="fas fa-mobile-alt mr-2 small-icon mt-1"></i>Contact</h2>
-                            </div>
-
-                            <p>Please contact me on Facebook, mobile or via email, more information can be found below.</p>
-                            <a class="main-button btn btn-warning container-fluid secondary-button" data-aos="zoom-in-up">More</a>
-                        </div>
-                    </div>
-                </div>
-
+        </div>
+        <!-- reviews section -->
+        <header class="reviews-background mt-5">
+            <div class="col-12 m-0 p-0 py-4 light-alpha-background">
+                <h2 class="text-center ">Reviews</h2>
             </div>
-            <!-- reviews section -->
-            <header class="reviews-background mt-5">
-                <div class="col-12 m-0 p-0 py-4 light-alpha-background">
-                    <h2 class="text-center ">Reviews</h2>
-                </div>
-            </header>
-            <div class="row m-0 p-0 max-width mx-auto mt-1">
-                <div class="col-12 m-0 p-0">
-                    <div class="row m-0 p-0">
-                        <div class="col-12 m-0 p-0 px-2 d-flex justify-content-end align-items-center" data-aos="fade-left">
-                            <div data-toggle="collapse" href=".filter" class="clickable d-flex justify-content-end align-items-center p-3">
-                                <p class="m-0 pr-2">Filter</p>
-                                <i class="fas fa-filter"></i>
-                            </div>
+        </header>
+        <div class="row m-0 p-0 max-width mx-auto mt-1">
+            <div class="col-12 m-0 p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-12 m-0 p-0 px-2 d-flex justify-content-end align-items-center" data-aos="fade-left">
+                        <div data-toggle="collapse" href=".filter" class="clickable d-flex justify-content-end align-items-center p-3">
+                            <p class="m-0 pr-2">Filter</p>
+                            <i class="fas fa-filter"></i>
                         </div>
-                        <div class="col-12 col-md-4 collapse filter mt-3">
-                            <select id="sort-date-review" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <select id="sort-date-review" class="form-control">
                             <option>Newest First</option>
                             <option>Oldest First</option>
                         </select>
-                        </div>
-                        <div class="col-12 col-md-4 collapse filter mt-3">
-                            <select id="show-amount-review" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <select id="show-amount-review" class="form-control">
                             <option>6</option>
                             <option>12</option>
                             <option>18</option>
                         </select>
-                        </div>
-                        <div class="col-12 col-md-4 collapse filter mt-3">
-                            <button class="secondary-button container-fluid" id="filter-date">
+                    </div>
+                    <div class="col-12 col-md-4 collapse filter mt-3">
+                        <button class="secondary-button container-fluid" id="filter-date">
                             Search
                         </button>
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row m-0 p-0 max-width mx-auto" id="reviews-container">
-            </div>
-
-            <!-- footer -->
-            <footer class="mt-5">
-                <div class="row m-0 p-0 justify-content-center pt-4 max-width mx-auto">
-                    <div class="col-12 p-0 m-0 px-3">
-                        <div class="row m-0 p-0">
-                            <div class="col-6 m-0 p-0 d-flex justify-content-start align-items-center">
-                                <i class="far fa-clock"></i>
-                                <p class="m-0 ml-2" id="current-time"></p>
-                            </div>
-                            <div class="col-6 m-0 p-0 d-flex justify-content-end align-items-center">
-                                <i class="far fa-calendar-alt mr-2"></i>
-                                <p class="m-0" id="current-date"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="container-fluid">
-                            <h4 class="text-center my-3">Hours</h4>
-                            <table class="footer-table">
-                                <tr>
-                                    <td><b>Monday</b></td>
-                                    <td class="text-flexend">09:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Tuesday</b></td>
-                                    <td class="text-flexend">09:00 - 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Wednesday</b></td>
-                                    <td class="text-flexend">09:00 - 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Thursday</b></td>
-                                    <td class="text-flexend">09:00 - 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Friday</b></td>
-                                    <td class="text-flexend">09:00 - 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Saturday</b></td>
-                                    <td class="text-flexend">09:00 - 15:00</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Sunday</b></td>
-                                    <td class="text-flexend">Closed</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="container-fluid">
-
-                            <h4 class="text-center my-3">Contact</h4>
-                            <table class="footer-table">
-                                <tr>
-                                    <td><b>Telephone</b></td>
-                                    <td class="text-flexend">01226 934353</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Email</b></td>
-                                    <td class="text-flexend">lavish_hair@outlook.com</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Location</b></td>
-                                    <td class="text-flexend">49 park street wombwell Barnsley</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="container-fluid">
-                            <h4 class="my-3 text-center">Brands</h4>
-                            <p class="m-0 text-center">Brand</p>
-                            <p class="m-0 text-center">Brand</p>
-                            <p class="m-0 text-center">Brand</p>
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center mt-2">
-                        <div>
-                            <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
-                                <i class="fab fa-facebook-square text-dark"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center mb-2 mt-2">
-                        <div>
-                            <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary"><span>&#169; 2020
-                                Lavish - Hair By Amanda</span></p>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <hr class="mt-1">
-                    </div>
-                    <div class="col-12 d-flex justify-content-center mb-3 mt-1">
-                        <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary">Developed by: fordsdevelopment
-                        </p>
-                    </div>
-                </div>
-            </footer>
-
-            <!-- book now -->
-            <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="book-now-modal" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <table class="footer-table my-3">
-                                <tr>
-                                    <td><b>Telephone</b></td>
-                                    <td class="text-flexend">01226 934353</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Email</b></td>
-                                    <td class="text-flexend">lavish_hair@outlook.com</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Facebook</b></td>
-                                    <td class="text-flexend">
-                                        <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
-                                            <i class="fab fa-facebook-square float-right d-inline text-dark"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <h4>Payments</h4>
-                            <div class="row m-0 p-0 justify-content-center">
-                                <div class="col-10 col-md-6">
-                                    <img src="media/payments.jpg" width="100%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="static/js/menu.js"></script>
-        <script src="static/js/moment.js"></script>
-        <script src="static/js/javascript.js"></script>
-        <script src="static/js/reviews.js"></script>
+        <div class="row m-0 p-0 max-width mx-auto" id="reviews-container">
+        </div>
 
-        <script>
-            AOS.init();
-        </script>
-    </body>
+        <!-- footer -->
+        <footer class="mt-5">
+            <div class="row m-0 p-0 justify-content-center pt-4 max-width mx-auto">
+                <div class="col-12 p-0 m-0 px-3">
+                    <div class="row m-0 p-0">
+                        <div class="col-6 m-0 p-0 d-flex justify-content-start align-items-center">
+                            <i class="far fa-clock"></i>
+                            <p class="m-0 ml-2" id="current-time"></p>
+                        </div>
+                        <div class="col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <p class="m-0" id="current-date"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <h4 class="text-center my-3">Hours</h4>
+                        <table class="footer-table">
+                            <tr>
+                                <td><b>Monday</b></td>
+                                <td class="text-flexend">09:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tuesday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Wednesday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Thursday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Friday</b></td>
+                                <td class="text-flexend">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Saturday</b></td>
+                                <td class="text-flexend">09:00 - 15:00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Sunday</b></td>
+                                <td class="text-flexend">Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
 
-    </html>
+                        <h4 class="text-center my-3">Contact</h4>
+                        <table class="footer-table">
+                            <tr>
+                                <td><b>Telephone</b></td>
+                                <td class="text-flexend">01226 934353</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td class="text-flexend">lavish_hair@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Location</b></td>
+                                <td class="text-flexend">49 park street wombwell Barnsley</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="container-fluid">
+                        <h4 class="my-3 text-center">Brands</h4>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
+                        <p class="m-0 text-center">Brand</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-2">
+                    <div>
+                        <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                            <i class="fab fa-facebook-square text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-2 mt-2">
+                    <div>
+                        <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary"><span>&#169; 2020
+                                Lavish - Hair By Amanda</span></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="mt-1">
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-3 mt-1">
+                    <p class="m-0 mb-2 d-flex justify-content-center text-small text-secondary">Developed by: fordsdevelopment
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- book now -->
+        <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="book-now-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="footer-table my-3">
+                            <tr>
+                                <td><b>Telephone</b></td>
+                                <td class="text-flexend">01226 934353</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td class="text-flexend">lavish_hair@outlook.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Facebook</b></td>
+                                <td class="text-flexend">
+                                    <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
+                                        <i class="fab fa-facebook-square float-right d-inline text-dark"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <h4>Payments</h4>
+                        <div class="row m-0 p-0 justify-content-center">
+                            <div class="col-10 col-md-6">
+                                <img src="media/payments.jpg" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/javascript.js"></script>
+    <script src="static/js/reviews.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
