@@ -11,3 +11,10 @@ window.addEventListener('scroll', function() {
         $('.back-to-top').removeClass('d-none')
     }
 });
+
+// curent time
+var now = new moment();
+console.log(now.format("HH:mm:ss"));
+
+$('#current-time').append(now.format("HH:mm:ss"))
+$('#current-date').append(moment().format('dddd'))
