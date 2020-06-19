@@ -609,8 +609,8 @@ li:hover {
   background: url("../../media/background-2.png") no-repeat;
   background-size: auto 100%;
   background-position: 30% 30%;
-  height: 100vh;
-  width: 100vw;
+  height: 102vh;
+  width: 100w;
   position: relative;
   background-attachment: scroll;
 }
@@ -639,6 +639,13 @@ li:hover {
   margin-top: 10vh;
 }
 
+.header-bottom {
+  position: absolute;
+  bottom: -4px;
+  right: -1px;
+  left: -1px;
+}
+
 .small-image {
   border-radius: 10px;
 }
@@ -654,7 +661,7 @@ li:hover {
   background-position: 50%;
   background-size: cover;
   background-attachment: scroll;
-  height: 35vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,6 +671,7 @@ li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .dark-alpha-background {
@@ -673,6 +681,20 @@ li:hover {
 
 .create-appointment {
   font-size: 35px;
+}
+
+.book-now-top {
+  position: absolute;
+  top: -6px;
+  left: -2px;
+  right: -2px;
+}
+
+.book-now-bottom {
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
 }
 
 .more-button {
@@ -761,6 +783,9 @@ footer {
 @media only screen and (min-height: 768px) {
   .alpha-svg {
     top: 768px;
+  }
+  .book-now-background {
+    height: 50vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

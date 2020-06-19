@@ -12,7 +12,7 @@ $('.toggle-menu').on('click', function() {
             gsap.to(".page-container", 0.8, { 'x': '-50vw', ease: 'power3' })
             gsap.to(".fixed-top-menu", 0.8, { 'transform': 'translateX(-50vw)', ease: 'power3' })
             gsap.from(".menu-mobile-items li", 0.5, { stagger: 0.15, 'transform': 'translateX(50vw)' })
-            gsap.to(".page-alpha", 0.8, { opacity: 1, 'transform': 'translateX(-50vw)', ease: 'power3' })
+            gsap.to(".page-alpha", 0.8, { opacity: 0.9, 'transform': 'translateX(-50vw)', ease: 'power3' })
             tl.to('.rectangle', 0.4, { stagger: 0.1, 'transform': 'scaleX(0)', ease: 'power1' }, '-=0.28')
             tl.to('.scissor-1', 0.6, { opacity: 1, ease: 'power1' }, '-=0.5')
             tl.to('.scissor-2', 0.6, { opacity: 1, ease: 'power1' }, '-=0.5')

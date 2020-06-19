@@ -10,7 +10,7 @@ $('body').on('click', '.more-button', function() {
     $(target).toggleClass('d-none')
 })
 
-// opp object
+// review object
 
 function review(name, rating, comment, date) {
     this.name = name
