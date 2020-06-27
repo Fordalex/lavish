@@ -89,38 +89,46 @@
     </nav>
 
 
-    <div class="page-container " id="page-top ">
+    <div class="page-container " id="page-top">
         <!-- header -->
         <header class="secondary-header ">
         </header>
 
-        <div class="row m-0 p-2" id="form_container">
-            <div class="col-5 m-0 p-1">
-                <label>Full Name</label>
-                <input name="full_name" id="full_name" type="text" class="form-control" placeholder="John Smith">
-            </div>
-            <div class="col-7 m-0 p-1">
-                <label>Email</label>
-                <input name="email" id="email" type="text" class="form-control" placeholder="JohnSmith55@mail.com">
-            </div>
-            <div class="col-12 m-0 p-1">
-                <label>Subject</label>
-                <select name="subject" id="subject" class="form-control">
-                    <option value="Booking">Booking</option>
-                    <option value="Enquiry">Enquiry</option>
-                </select>
-            </div>
-            <div class="col-12 m-0 p-1">
-                <label>Information</label>
-                <textarea class="form-control" id="information" name="information" placeholder="Please enter your message..."></textarea>
-            </div>
-            <div class="col-12 m-0 p-1">
-                <button class="main-button btn btn-warning secondary-button container-fluid px-0 mt-3" value="Send" id="send_email">Send</button>
-            </div>
-            <div class="col-12 m-0 p-0" id="error">
+        <!-- contact form -->
+        <div class="d-flex justify-content-center">
+            <div class="row m-0 p-2" id="form_container">
+                <div class="col-12 m-0 p-0 my-4">
+                    <h4 class="text-center">Contact Form</h4>
+                    <p class="m-0 text-secondary text-center">Please don't hesitate to ask any questions!</p>
+                </div>
+                <div class="col-5 m-0 p-1">
+                    <label>Full Name</label>
+                    <input name="full_name" id="full_name" type="text" class="form-control" placeholder="John Smith">
+                </div>
+                <div class="col-7 m-0 p-1">
+                    <label>Email</label>
+                    <input name="email" id="email" type="text" class="form-control" placeholder="JohnSmith55@mail.com">
+                </div>
+                <div class="col-12 m-0 p-1">
+                    <label>Subject</label>
+                    <select name="subject" id="subject" class="form-control">
+                        <option value="Booking">Booking</option>
+                        <option value="Enquiry">Enquiry</option>
+                    </select>
+                </div>
+                <div class="col-12 m-0 p-1">
+                    <label>Information</label>
+                    <textarea class="form-control" id="information" name="information" placeholder="Please enter your message..."></textarea>
+                </div>
+                <div class="col-12 col-md-2 ml-auto m-0 p-1">
+                    <button class="main-button btn btn-warning secondary-button container-fluid px-0 mt-3" value="Send" id="send_email">Send</button>
+                </div>
+                <div class="col-12 m-0 p-0" id="error">
 
+                </div>
             </div>
         </div>
+
 
 
 

@@ -47,7 +47,7 @@
                 <a id="services-button" href="services.html"><img src="https://img.icons8.com/ios-filled/19/000000/barber-scissors.png" class="mr-2" />Services</a>
             </li>
             <li><i class="fas fa-book"></i>Bookings</li>
-            <li><i class="fas fa-address-book"></i>Contact</li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i>Contact</a></li>
             <li><i class="fas fa-map-marker-alt "></i>Location</li>
         </ul>
     </nav>
@@ -70,7 +70,7 @@
                 <li>About</li>
                 <li><a href="services.html">Services</a></li>
                 <li>Bookings</li>
-                <li>Contact</li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>Location</li>
             </ul>
             <a href="https://www.facebook.com/Hair-by-AmandaJayne-112385330278291/" target="_blank">
@@ -309,21 +309,24 @@
         <!-- footer -->
         <footer class="mt-5">
             <div class="row m-0 p-0 justify-content-center pt-4 max-width mx-auto">
-                <div class="col-12 p-0 m-0 px-3">
-                    <div class="row m-0 p-0">
-                        <div class="col-6 m-0 p-0 d-flex justify-content-start align-items-center">
-                            <i class="far fa-clock"></i>
-                            <p class="m-0 ml-2" id="current-time"></p>
-                        </div>
-                        <div class="col-6 m-0 p-0 d-flex justify-content-end align-items-center">
-                            <i class="far fa-calendar-alt mr-2"></i>
-                            <p class="m-0" id="current-date"></p>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="container-fluid">
                         <h4 class="text-center my-3">Hours</h4>
+                        <div class="row m-0 p-0 mb-3">
+                            <div class="col-12 p-0 m-0 px-0">
+                                <div class="row m-0 p-0">
+                                    <div class="col-6 m-0 p-0 d-flex justify-content-start align-items-center">
+                                        <i class="far fa-clock"></i>
+                                        <p class="m-0 ml-2" id="current-time"></p>
+                                    </div>
+                                    <div class="col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                        <i class="far fa-calendar-alt mr-2"></i>
+                                        <p class="m-0" id="current-date"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <table class="footer-table">
                             <tr>
                                 <td><b>Monday</b></td>
@@ -436,7 +439,8 @@
                                 </td>
                             </tr>
                         </table>
-                        <h4>Payments</h4>
+                        <a href="contact.html" class="secondary-button container-fluid my-2 mb-3">Contact</a>
+                        <h4 class="mt-2">Payments</h4>
                         <div class="row m-0 p-0 justify-content-center">
                             <div class="col-10 col-md-6">
                                 <img src="media/payments.jpg" width="100%">
